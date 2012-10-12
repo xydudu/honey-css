@@ -1,0 +1,131 @@
+/**
+ *name: mod-dialog.less;
+ *function: 弹出层模块基类;
+ *creator: luozhiqiang;
+ *modify: none;
+ *update-time: 2012-05-23;
+ **/
+.cancel-dialog-bt, .alert-bt, .jion-group, .red, .green, .yellow, .tuijian-select{
+    background: url("//@{public-url}sprites/public.png") no-repeat 0 0;
+}
+.mod-dialog {
+    z-index:200;
+    width: 334px;    
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+    .black {
+        z-index: -1;
+        width: 1999px;
+        height: 1999px;
+        filter: alpha(opacity=20);
+        opacity: 0.2;
+        left: 0;
+        top: 0;
+        background-color: #000;
+    }
+    .dialog-wrap {
+        margin: 4px;
+        border: 1px solid #AFAEAE;
+        background-color: #FFF;
+        h3 {
+            height: 30px;
+            line-height: 30px;
+            background-color: #F0F0F0;
+            font-size: 12px;
+            font-weight: normal;
+            color: #666;
+            .cancel-dialog-bt {
+                margin: 11px 15px 0 0;
+                width: 8px;
+                height: 7px;
+                background-position: 0 -88px;
+            }
+        }
+        .alert-bt {
+            display: block;
+            width: 120px;
+            height: 40px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+        .cancel-del {
+            top:10px;
+            right: 60px;
+        }
+        .info {
+            padding: 15px 12px;
+            .text-input {
+                color: #999;
+                padding: 0 10px;
+                width: 278px;
+                height: 33px;
+                line-height: 33px;
+                border: 1px solid #DDD;
+            }
+            textarea {
+                color: #999;
+                padding:10px;
+                width: 278px;
+                height: 53px;
+                border: 1px solid #DDD;
+            }
+            .cancel-dialog {
+                height: 25px;
+                line-height: 25px;
+            }
+            .jion-group {
+                width: 78px;
+                height: 21px;
+                background-position: 0 -41px;
+            }                        
+        }
+        .alert{
+            height: 80px;
+            .alert-ico {
+                line-height: 80px;
+                padding: 5px 0 5px 30px;              
+            }
+            .red {
+                background-position: -99px -48px;
+            }
+            .green {
+                background-position: -99px -78px;
+            }
+            .yellow {
+                background-position: -99px -708px;
+            }
+        }
+        .tuijian{
+            padding: 7px 0 20px 14px;
+            border-bottom: 1px dashed #E1E1E1;
+            li {
+                display: inline;
+                margin: 10px 0 0 10px;
+                float: left;
+                width: 178px;
+                height: 64px;
+                padding: 5px;
+                background: #FAFAFA;
+                border: 1px solid #EEE;
+                cursor: pointer;
+                text-align: left;
+                dl {
+                    display:inline;
+                    margin: 0 5px 0 10px;
+                    width: 99px;
+                }
+                &.tuijian-select {
+                    background: url("//@{base-url}icon/tuijian-ico.png") no-repeat 172px 58px #F1F5E9;
+                    border: 1px solid #D5E2BE;                    
+                }
+            }
+        }
+        .tuijian-quxiao {
+            top: 10px;
+            right: 220px;            
+        }        
+    }
+}
+

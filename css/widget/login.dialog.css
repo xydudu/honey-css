@@ -1,0 +1,97 @@
+html{color:#444;background:#F1F1F1;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,iframe,.h10,.h20{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+input:focus,textarea:focus,select:focus{outline:none;color:#444 !important;}
+input[type="text"],textarea{-webkit-appearance:none;}
+textarea{overflow:auto;resize:none;}
+h1,h2,h3,h4,h5,h6,input,textarea,select,button{font-size:100%;}
+img{display:block;}
+body{text-align:center;font:12px/1.5 'Helvetica Neue',Helvetica,Arial,Sans-serif;}
+a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
+.clearfix{*zoom:1;}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.hide-text{text-indent:-1000px;overflow:hidden;}
+.border-right{border-right:1px solid #CCC;}
+.no-border{border:none !important;}
+.min-h{font-size:1px;line-height:1px;}
+.fl{float:left;}
+.fr{float:right !important;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center !important;}
+.pr{position:relative;left:0;top:0;}
+.pa{position:absolute;}
+.hide{display:none;}
+.w64{width:64px;}
+.pt20{padding-top:20px;}
+.pl0{padding-left:0px !important;}
+.pl10{padding-left:10px !important;}
+.pr0{padding-right:0px !important;}
+.p0{padding:0 !important;}
+.p5{padding:5px;}
+.pr10{padding-right:10px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml30{margin-left:30px;}
+.ml40{margin-left:40px;}
+.ml135{margin-left:135px;}
+.ml190{margin-left:190px;}
+.ml45{margin-left:45px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.mb0{margin-bottom:0 !important;}
+.f12{font-size:12px !important;}
+.f14{font-size:14px !important;}
+.bold{font-weight:bold !important;}
+.bn{font-weight:normal !important;}
+.underline{text-decoration:underline !important;}
+.underline:hover{text-decoration:none !important;}
+.c444{color:#444 !important;}
+.c666{color:#666 !important;}
+.c999{color:#999 !important;}
+.cc30{color:#C30;}
+.cccc{color:#CCC !important;}
+.c093d72{color:#093D72 !important;}
+.c000{color:#000 !important;}
+.z1{z-index:1;}
+.z5{z-index:5;}
+.z10{z-index:10;}
+.h20{height:20px;}
+.h10{height:10px;}
+.cancel-dialog-bt,.alert-bt,.jion-group,.red,.green,.yellow,.tuijian-select{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;}
+.mod-dialog{z-index:200;width:334px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;overflow:hidden;}.mod-dialog .black{z-index:-1;width:1999px;height:1999px;filter:alpha(opacity=20);opacity:0.2;left:0;top:0;background-color:#000;}
+.mod-dialog .dialog-wrap{margin:4px;border:1px solid #AFAEAE;background-color:#FFF;}.mod-dialog .dialog-wrap h3{height:30px;line-height:30px;background-color:#F0F0F0;font-size:12px;font-weight:normal;color:#666;}.mod-dialog .dialog-wrap h3 .cancel-dialog-bt{margin:11px 15px 0 0;width:8px;height:7px;background-position:0 -88px;}
+.mod-dialog .dialog-wrap .alert-bt{display:block;width:120px;height:40px;margin:0 auto;margin-bottom:25px;}
+.mod-dialog .dialog-wrap .cancel-del{top:10px;right:60px;}
+.mod-dialog .dialog-wrap .info{padding:15px 12px;}.mod-dialog .dialog-wrap .info .text-input{color:#999;padding:0 10px;width:278px;height:33px;line-height:33px;border:1px solid #DDD;}
+.mod-dialog .dialog-wrap .info textarea{color:#999;padding:10px;width:278px;height:53px;border:1px solid #DDD;}
+.mod-dialog .dialog-wrap .info .cancel-dialog{height:25px;line-height:25px;}
+.mod-dialog .dialog-wrap .info .jion-group{width:78px;height:21px;background-position:0 -41px;}
+.mod-dialog .dialog-wrap .alert{height:80px;}.mod-dialog .dialog-wrap .alert .alert-ico{line-height:80px;padding:5px 0 5px 30px;}
+.mod-dialog .dialog-wrap .alert .red{background-position:-99px -48px;}
+.mod-dialog .dialog-wrap .alert .green{background-position:-99px -78px;}
+.mod-dialog .dialog-wrap .alert .yellow{background-position:-99px -708px;}
+.mod-dialog .dialog-wrap .tuijian{padding:7px 0 20px 14px;border-bottom:1px dashed #E1E1E1;}.mod-dialog .dialog-wrap .tuijian li{display:inline;margin:10px 0 0 10px;float:left;width:178px;height:64px;padding:5px;background:#FAFAFA;border:1px solid #EEE;cursor:pointer;text-align:left;}.mod-dialog .dialog-wrap .tuijian li dl{display:inline;margin:0 5px 0 10px;width:99px;}
+.mod-dialog .dialog-wrap .tuijian li.tuijian-select{background:url("//honey.hunantv.com/i/image/icon/tuijian-ico.png") no-repeat 172px 58px #f1f5e9;border:1px solid #D5E2BE;}
+.mod-dialog .dialog-wrap .tuijian-quxiao{top:10px;right:220px;}
+.mod-dialog .h10{margin:0;padding:0;overflow:hidden;}
+.mod-dialog .honey-login-input{width:290px;margin-bottom:15px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;height:27px;padding:4px 6px;font-size:14px;line-height:27px;color:gray;border:1px solid #ddd;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition:border linear .2s, box-shadow linear .2s;-moz-transition:border linear .2s, box-shadow linear .2s;-o-transition:border linear .2s, box-shadow linear .2s;transition:border linear .2s, box-shadow linear .2s;}.mod-dialog .honey-login-input:-moz-placeholder{color:#bfbfbf;}
+.mod-dialog .honey-login-input:-ms-input-placeholder{color:#bfbfbf;}
+.mod-dialog .honey-login-input::-webkit-input-placeholder{color:#bfbfbf;}
+.mod-dialog .honey-login-submit{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 -120px;width:90px;height:32px;border:0;overflow:hidden;color:#fff;font-weight:200px;line-height:32px;cursor:pointer;}
+.mod-dialog .actions{text-align:left;padding:0 8px;margin:0;position:relative;color:#999;}.mod-dialog .actions .set-cookies{padding:5px 20px;display:inline-block;}.mod-dialog .actions .set-cookies input{margin-right:3px;}
+.mod-dialog .actions .forget-pass{position:absolute;right:0;top:9px;}
+.mod-dialog .actions p{clear:both;margin:0;display:block;border:none;border:0;border-top:1px solid #ddd;margin-top:20px;padding-top:10px;}

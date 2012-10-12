@@ -1,0 +1,71 @@
+@import "../honey.less";
+@import "../lib/css3.less";
+@import "../mod/mod-dialog.less";
+
+.mod-dialog {
+
+    .h10 {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .honey-login-input {
+        width: 290px;
+        margin-bottom: 15px;
+        .border-radius(2px);
+        .placeholder(#bfbfbf);
+        height: 27px;
+        padding: 4px 6px;
+        font-size: 14px;
+        line-height: 27px;
+        color: gray;
+        border: 1px solid #ddd;
+        .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+        .transition(~"border linear .2s, box-shadow linear .2s");
+
+    }
+    .honey-login-submit {
+        background: url("//@{public-url}sprites/public.png") no-repeat 0 -120px;
+        width: 90px;
+        height: 32px;
+        border: 0;
+        overflow: hidden;
+        color: #fff;
+        font-weight: 200px;
+        line-height: 32px;
+        //padding-bottom: 5px;
+        cursor: pointer;
+    }
+    .actions {
+        text-align: left; 
+        padding: 0 8px;
+        margin: 0;
+        position: relative;
+        color: #999;
+        .set-cookies {
+            padding: 5px 20px;
+            display: inline-block;
+            input {
+                margin-right: 3px;
+            }
+        }
+        .forget-pass {
+            position: absolute;
+            right: 0;
+            top: 9px;
+        }
+        p {
+            clear: both;
+            margin: 0;
+            display: block;
+            border: none;
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+    }
+
+
+}
