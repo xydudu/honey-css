@@ -1,0 +1,111 @@
+@import "../honey.less";
+@import "../lib/css3.less";
+
+#honey-comment {
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        span {
+            font-size: 12px;
+            color: gray;
+        }
+    }
+
+    ul.honey-comment-list {
+        margin-top: 20px; 
+
+        li {
+            border-bottom: 1px dotted #E1E1E1;
+            overflow: hidden;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .honey-comment-avatar {
+            float: left;
+            a {
+                display: block;    
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                border: 1px solid #dfdfdf;
+                padding: 1px;
+            }
+            p {
+                text-align: center;
+                color: #9f9f9f;
+            }
+        }
+        .honey-comment-body {
+            margin-left: 70px;
+            p {
+                margin-bottom: 5px;
+            }
+            .top {
+                color: #999;
+            }
+            .content {
+                color: #222;
+                font-size: 14px;
+            }
+            .actions {
+                text-align: right;
+            }
+            .arrow {
+                position: absolute;
+                background: url("//@{public-url}sprites/public.png") no-repeat -19px -69px;
+                width: 10px;
+                height: 6px;
+                top: -5px;
+                overflow: hidden;
+            }
+            .reply, .origin-content {
+                background-color: #f6f6f6;
+                border: 1px solid #dfe1e1;
+                color: #777777;
+                padding: 12px;
+                position: relative;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .origin-content {
+                p {
+                    margin: 0;
+                }
+                .arrow {
+                    left: 10px;
+                }
+            }
+            .reply {
+                padding: 0;
+                input {
+                    border: 0; 
+                    border-right: 1px solid #dfe1e1;
+                    padding: 10px;
+                    display: inline-block;
+                }
+                table, input {
+                    width: 100%;
+                }
+                .arrow {
+                    right: 10px;
+                }
+                .reply-button {
+                    width: 100px;
+                    text-align: right;
+                }
+                button {
+                    background: url("//@{public-url}sprites/public.png") no-repeat -18px -78px;
+                    border: none;
+                    width: 65px;
+                    height: 25px;
+                    overflow: hidden;
+                    color: #fff;
+                    margin-right: 6px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
