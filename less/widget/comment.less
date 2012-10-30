@@ -11,6 +11,9 @@
             color: gray;
         }
     }
+    textarea {
+        background-color: #fff;
+    }
 
     ul.honey-comment-list {
         margin-top: 20px; 
@@ -23,6 +26,7 @@
         }
         .honey-comment-avatar {
             float: left;
+            position: relative;
             a {
                 display: block;    
                 width: 50px;
@@ -94,17 +98,195 @@
                     width: 100px;
                     text-align: right;
                 }
-                button {
-                    background: url("//@{public-url}sprites/public.png") no-repeat -18px -78px;
-                    border: none;
-                    width: 65px;
-                    height: 25px;
-                    overflow: hidden;
-                    color: #fff;
-                    margin-right: 6px;
-                    cursor: pointer;
-                }
+                
             }
+        }
+    }
+
+    .honey-comment-text {
+        margin-top: 30px;
+        h5 {
+            font-size: 14px;
+            font-weight: 200;
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 15px;
+            } 
+            span {
+                color: #999;
+                margin: 0 10px;
+            }
+        } 
+        .comment-input {
+            border: 1px solid #dfe1e1; 
+            margin-top: 20px;
+            position: relative;
+            h4 {
+                height: 70px;
+                line-height: 70px;
+                background-color: #f6f6f6; 
+                padding: 0 20px;
+                font-size: 14px;
+                border-bottom: 1px solid #dfe1e1; 
+                overflow: hidden;
+            }
+            .textarea {
+                padding: 10px;
+            }
+            textarea {
+                height: 90px;
+                width: 100%;
+                border: 0;
+            }
+            p {
+                font-size: 12px;
+                color: #999;
+                margin: 0;
+                padding: 20px;
+                border-bottom: 1px solid #dfe1e1; 
+                background-color: #f6f6f6; 
+                input {
+                    margin-right: 10px;
+                    padding: 3px;
+                    width: 100px;
+                } 
+                
+            }
+        }
+        .actions {
+            margin-top: 15px;
+            color: #999;
+        }
+    }
+
+    .selected,
+    .emo-small-1,
+    .emo-small-2,
+    .emo-small-3,
+    .emo-small-4,
+    .emo-small-5,    
+    .emo-1,
+    .emo-2,
+    .emo-3,
+    .emo-4,
+    .emo-5 {
+        position: absolute;
+        background: url("//@{public-url}sprites/public.png") no-repeat 0 0;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        top: 15px;
+        cursor: pointer;
+    }
+
+    .emo-small-1,
+    .emo-small-2,
+    .emo-small-3,
+    .emo-small-4,
+    .emo-small-5 {
+        width: 25px;
+        height: 25px;
+        top: 32px;
+        left: 32px;
+    }
+
+    .emo-small-1 {
+        background-position: -92px -180px;
+    }
+    .emo-small-2 {
+        background-position: -92px -264px;
+    }
+    .emo-small-3 {
+        background-position: -92px -236px;
+    }
+    .emo-small-4 {
+        background-position: -92px -152px;
+    }
+    .emo-small-5 {
+        background-position: -92px -208px;
+    }
+
+
+    .emo-1 {
+        background-position: 0 -152px;
+        right: 40px;
+    }
+    .emo-2 {
+        background-position: 0 -195px;
+        right: 100px;
+    }
+    .emo-3 {
+        background-position: 0 -237px;
+        right: 160px;
+    }
+    .emo-4 {
+        background-position: -44px -152px;
+        right: 220px;
+    }
+    .emo-5 {
+        background-position: -44px -195px;
+        right: 280px;
+    }
+
+    .btn {
+        background: url("//@{public-url}sprites/public.png") no-repeat -18px -78px;
+        border: none;
+        width: 65px;
+        height: 25px;
+        overflow: hidden;
+        color: #fff;
+        margin-right: 6px;
+        cursor: pointer;
+    }
+
+    .selected {
+        height: 10px;
+        width: 10px;
+        background-position: -19px -105px;
+        top: 45px;
+        z-index: 999;
+    }
+
+    .honey-comment-pages {
+        margin-top: 20px; 
+        font-size: 16px;
+        text-align: right;
+        a {
+            margin: 0 10px;
+            text-decoration: underline;
+            text-weight: 200;
+            display: inline-block;
+        }
+        a.current {
+            text-decoration: none;
+            text-weight: 600;
+            color: red;
+        }
+        a.next, a.end,
+        a.prev, a.first {
+            background: url("//@{public-url}sprites/public.png") no-repeat 0 0;
+            overflow: hidden;
+        } 
+        a.prev {
+            width: 15px;
+            height: 13px;
+            background-position: -58px -106px;
+        }
+        a.first {
+            width: 10px;
+            height: 13px;
+            background-position: -73px -106px;
+        }
+        a.next {
+            width: 15px;
+            height: 13px;
+            background-position: -43px -106px;
+        }
+        a.end {
+            width: 10px;
+            height: 13px;
+            background-position: -33px -106px;
         }
     }
 

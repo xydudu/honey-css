@@ -72,8 +72,9 @@ a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 .h20{height:20px;}
 .h10{height:10px;}
 #honey-comment h3{font-size:18px;font-weight:600;}#honey-comment h3 span{font-size:12px;color:gray;}
+#honey-comment textarea{background-color:#fff;}
 #honey-comment ul.honey-comment-list{margin-top:20px;}#honey-comment ul.honey-comment-list li{border-bottom:1px dotted #E1E1E1;overflow:hidden;padding-bottom:10px;padding-top:10px;}
-#honey-comment ul.honey-comment-list .honey-comment-avatar{float:left;}#honey-comment ul.honey-comment-list .honey-comment-avatar a{display:block;width:50px;height:50px;overflow:hidden;border:1px solid #dfdfdf;padding:1px;}
+#honey-comment ul.honey-comment-list .honey-comment-avatar{float:left;position:relative;}#honey-comment ul.honey-comment-list .honey-comment-avatar a{display:block;width:50px;height:50px;overflow:hidden;border:1px solid #dfdfdf;padding:1px;}
 #honey-comment ul.honey-comment-list .honey-comment-avatar p{text-align:center;color:#9f9f9f;}
 #honey-comment ul.honey-comment-list .honey-comment-body{margin-left:70px;}#honey-comment ul.honey-comment-list .honey-comment-body p{margin-bottom:5px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .top{color:#999;}
@@ -87,4 +88,31 @@ a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply table,#honey-comment ul.honey-comment-list .honey-comment-body .reply input{width:100%;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .arrow{right:10px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button{width:100px;text-align:right;}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply button{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat -18px -78px;border:none;width:65px;height:25px;overflow:hidden;color:#fff;margin-right:6px;cursor:pointer;}
+#honey-comment .honey-comment-text{margin-top:30px;}#honey-comment .honey-comment-text h5{font-size:14px;font-weight:200;}#honey-comment .honey-comment-text h5 img{display:inline-block;vertical-align:middle;margin-right:15px;}
+#honey-comment .honey-comment-text h5 span{color:#999;margin:0 10px;}
+#honey-comment .honey-comment-text .comment-input{border:1px solid #dfe1e1;margin-top:20px;position:relative;}#honey-comment .honey-comment-text .comment-input h4{height:70px;line-height:70px;background-color:#f6f6f6;padding:0 20px;font-size:14px;border-bottom:1px solid #dfe1e1;overflow:hidden;}
+#honey-comment .honey-comment-text .comment-input .textarea{padding:10px;}
+#honey-comment .honey-comment-text .comment-input textarea{height:90px;width:100%;border:0;}
+#honey-comment .honey-comment-text .comment-input p{font-size:12px;color:#999;margin:0;padding:20px;border-bottom:1px solid #dfe1e1;background-color:#f6f6f6;}#honey-comment .honey-comment-text .comment-input p input{margin-right:10px;padding:3px;width:100px;}
+#honey-comment .honey-comment-text .actions{margin-top:15px;color:#999;}
+#honey-comment .selected,#honey-comment .emo-small-1,#honey-comment .emo-small-2,#honey-comment .emo-small-3,#honey-comment .emo-small-4,#honey-comment .emo-small-5,#honey-comment .emo-1,#honey-comment .emo-2,#honey-comment .emo-3,#honey-comment .emo-4,#honey-comment .emo-5{position:absolute;background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;width:40px;height:40px;overflow:hidden;top:15px;cursor:pointer;}
+#honey-comment .emo-small-1,#honey-comment .emo-small-2,#honey-comment .emo-small-3,#honey-comment .emo-small-4,#honey-comment .emo-small-5{width:25px;height:25px;top:32px;left:32px;}
+#honey-comment .emo-small-1{background-position:-92px -180px;}
+#honey-comment .emo-small-2{background-position:-92px -264px;}
+#honey-comment .emo-small-3{background-position:-92px -236px;}
+#honey-comment .emo-small-4{background-position:-92px -152px;}
+#honey-comment .emo-small-5{background-position:-92px -208px;}
+#honey-comment .emo-1{background-position:0 -152px;right:40px;}
+#honey-comment .emo-2{background-position:0 -195px;right:100px;}
+#honey-comment .emo-3{background-position:0 -237px;right:160px;}
+#honey-comment .emo-4{background-position:-44px -152px;right:220px;}
+#honey-comment .emo-5{background-position:-44px -195px;right:280px;}
+#honey-comment .btn{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat -18px -78px;border:none;width:65px;height:25px;overflow:hidden;color:#fff;margin-right:6px;cursor:pointer;}
+#honey-comment .selected{height:10px;width:10px;background-position:-19px -105px;top:45px;z-index:999;}
+#honey-comment .honey-comment-pages{margin-top:20px;font-size:16px;text-align:right;}#honey-comment .honey-comment-pages a{margin:0 10px;text-decoration:underline;text-weight:200;display:inline-block;}
+#honey-comment .honey-comment-pages a.current{text-decoration:none;text-weight:600;color:red;}
+#honey-comment .honey-comment-pages a.next,#honey-comment .honey-comment-pages a.end,#honey-comment .honey-comment-pages a.prev,#honey-comment .honey-comment-pages a.first{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;overflow:hidden;}
+#honey-comment .honey-comment-pages a.prev{width:15px;height:13px;background-position:-58px -106px;}
+#honey-comment .honey-comment-pages a.first{width:10px;height:13px;background-position:-73px -106px;}
+#honey-comment .honey-comment-pages a.next{width:15px;height:13px;background-position:-43px -106px;}
+#honey-comment .honey-comment-pages a.end{width:10px;height:13px;background-position:-33px -106px;}
