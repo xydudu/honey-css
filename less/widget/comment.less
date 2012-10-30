@@ -82,14 +82,26 @@
             }
             .reply {
                 padding: 0;
-                input {
+                .reply-input>input {
                     border: 0; 
                     border-right: 1px solid #dfe1e1;
                     padding: 10px;
                     display: inline-block;
                 }
-                table, input {
+                
+                table, .reply-input>input {
                     width: 100%;
+                }
+                .reply-login {
+                    padding: 10px;
+                    span {
+                        margin: 0 10px;
+                    }
+                    input {
+                        margin-right: 10px;
+                        padding: 3px;
+                        width: 100px;
+                    } 
                 }
                 .arrow {
                     right: 10px;
@@ -97,6 +109,12 @@
                 .reply-button {
                     width: 100px;
                     text-align: right;
+                }
+                .nologin-info {
+                    padding: 10px;
+                    font-size: 14px;
+                    background-color: #fff;
+                    padding-bottom: 30px;    
                 }
                 
             }
