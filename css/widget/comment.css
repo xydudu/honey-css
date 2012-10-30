@@ -87,7 +87,7 @@ a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply{padding:0;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input>input{border:0;border-right:1px solid #dfe1e1;padding:10px;display:inline-block;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply table,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input>input{width:100%;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login{padding:10px;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login span{margin:0 10px;}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login input{margin-right:10px;padding:3px;width:100px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login input{margin-right:10px;padding:3px;width:80px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .arrow{right:10px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button{width:100px;text-align:right;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .nologin-info{padding:10px;font-size:14px;background-color:#fff;padding-bottom:30px;}
