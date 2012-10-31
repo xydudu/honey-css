@@ -3,6 +3,7 @@
 
 #honey-comment {
     
+    
     h3 {
         font-size: 18px;
         font-weight: 600;
@@ -63,7 +64,7 @@
                 top: -5px;
                 overflow: hidden;
             }
-            .reply, .origin-content {
+            .reply, .origin-content, .origin-contents {
                 background-color: #f6f6f6;
                 border: 1px solid #dfe1e1;
                 color: #777777;
@@ -71,6 +72,31 @@
                 position: relative;
                 margin-top: 10px;
                 margin-bottom: 10px;
+            }
+            .origin-contents {
+                background-color: #f9f7f0; 
+                border-color: #dfd7b3;
+                color: #444;
+                padding: 3px;
+                margin-top: 0;
+                margin-bottom: 0;
+                &.mb15 {
+                    margin-bottom: 15px;
+                }
+                small {
+                    float: right;
+                    color: #999;
+                }
+                p {
+                    padding: 10px;
+                    font-size: 14px;
+                }
+                span {
+                    color: #999;
+                    display: block;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
             }
             .origin-content {
                 p {

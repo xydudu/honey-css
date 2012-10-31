@@ -81,7 +81,11 @@ a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 #honey-comment ul.honey-comment-list .honey-comment-body .content{color:#222;font-size:14px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .actions{text-align:right;}
 #honey-comment ul.honey-comment-list .honey-comment-body .arrow{position:absolute;background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat -19px -69px;width:10px;height:6px;top:-5px;overflow:hidden;}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply,#honey-comment ul.honey-comment-list .honey-comment-body .origin-content{background-color:#f6f6f6;border:1px solid #dfe1e1;color:#777777;padding:12px;position:relative;margin-top:10px;margin-bottom:10px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply,#honey-comment ul.honey-comment-list .honey-comment-body .origin-content,#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents{background-color:#f6f6f6;border:1px solid #dfe1e1;color:#777777;padding:12px;position:relative;margin-top:10px;margin-bottom:10px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents{background-color:#f9f7f0;border-color:#dfd7b3;color:#444;padding:3px;margin-top:0;margin-bottom:0;}#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents.mb15{margin-bottom:15px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents small{float:right;color:#999;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents p{padding:10px;font-size:14px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents span{color:#999;display:block;font-size:12px;margin-bottom:5px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content p{margin:0;}
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content .arrow{left:10px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply{padding:0;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input>input{border:0;border-right:1px solid #dfe1e1;padding:10px;display:inline-block;}
