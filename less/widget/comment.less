@@ -115,14 +115,14 @@
             }
             .reply {
                 padding: 0;
-                .reply-input>input {
+                .reply-input input {
                     border: 0; 
                     border-right: 1px solid #dfe1e1;
                     padding: 10px;
                     display: inline-block;
                 }
                 
-                table, .reply-input>input {
+                table, .reply-input input {
                     width: 100%;
                 }
                 .reply-login {
@@ -184,8 +184,41 @@
             }
             .textarea {
                 padding: 10px;
+                position: relative;
             }
-            textarea {
+            .notice {
+                background-color: #cb4b4b;
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                line-height: 80px;
+                position: absolute;
+                left: 0;
+                top: 10px;
+                width: 100%;
+                display: none;
+                i {
+                    background: url("//@{public-url}sprites/public.png") no-repeat;
+                    height: 21px;
+                    width: 21px;
+                    display: inline-block;
+                    vertical-align: text-bottom;
+                    overflow: hidden;
+                    margin-right: 5px;
+                }
+                &.success, &.error {
+                    background-color: #fff;
+                    color: #222;
+                    font-size: 20px;
+                }
+                &.success i {
+                    background-position: -99px -81px;
+                }
+                &.error i {
+                    background-position: -99px -51px;
+                }
+            }
+            .notice, textarea {
                 height: 90px;
                 width: 100%;
                 border: 0;
