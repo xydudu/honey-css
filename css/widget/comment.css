@@ -71,7 +71,7 @@ a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 .h20{height:20px;}
 .h10{height:10px;}
 #honey-comment h3{font-size:18px;font-weight:600;}#honey-comment h3 span{font-size:12px;color:gray;}
-#honey-comment textarea{background-color:#fff;}
+#honey-comment textarea{background-color:#fff;font-size:14px;}
 #honey-comment ul.honey-comment-list{margin-top:20px;}#honey-comment ul.honey-comment-list li{border-bottom:1px dotted #E1E1E1;overflow:hidden;padding-bottom:10px;padding-top:10px;}
 #honey-comment ul.honey-comment-list .honey-comment-avatar{float:left;position:relative;}#honey-comment ul.honey-comment-list .honey-comment-avatar a{display:block;width:50px;height:50px;overflow:hidden;border:1px solid #dfdfdf;padding:1px;}
 #honey-comment ul.honey-comment-list .honey-comment-avatar p{text-align:center;color:#9f9f9f;}
