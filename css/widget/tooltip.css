@@ -1,0 +1,18 @@
+.cancel-dialog-bt,.alert-bt,.jion-group,.red,.green,.yellow,.tuijian-select{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;}
+.mod-dialog{z-index:200;width:334px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;overflow:hidden;}.mod-dialog .black{z-index:-1;width:1999px;height:1999px;filter:alpha(opacity=20);opacity:0.2;left:0;top:0;background-color:#000;}
+.mod-dialog .dialog-wrap{margin:4px;border:1px solid #AFAEAE;background-color:#FFF;}.mod-dialog .dialog-wrap h3{height:30px;line-height:30px;background-color:#F0F0F0;font-size:12px;font-weight:normal;color:#666;}.mod-dialog .dialog-wrap h3 .cancel-dialog-bt{margin:11px 15px 0 0;width:8px;height:7px;background-position:0 -88px;}
+.mod-dialog .dialog-wrap .alert-bt{display:block;width:120px;height:40px;margin:0 auto;margin-bottom:25px;}
+.mod-dialog .dialog-wrap .cancel-del{top:10px;right:60px;}
+.mod-dialog .dialog-wrap .info{padding:15px 12px;}.mod-dialog .dialog-wrap .info .text-input{color:#999;padding:0 10px;width:278px;height:33px;line-height:33px;border:1px solid #DDD;}
+.mod-dialog .dialog-wrap .info textarea{color:#999;padding:10px;width:278px;height:53px;border:1px solid #DDD;}
+.mod-dialog .dialog-wrap .info .cancel-dialog{height:25px;line-height:25px;}
+.mod-dialog .dialog-wrap .info .jion-group{width:78px;height:21px;background-position:0 -41px;}
+.mod-dialog .dialog-wrap .alert{height:80px;}.mod-dialog .dialog-wrap .alert .alert-ico{line-height:80px;padding:5px 0 5px 30px;}
+.mod-dialog .dialog-wrap .alert .red{background-position:-99px -48px;}
+.mod-dialog .dialog-wrap .alert .green{background-position:-99px -78px;}
+.mod-dialog .dialog-wrap .alert .yellow{background-position:-99px -708px;}
+.mod-dialog .dialog-wrap .tuijian{padding:7px 0 20px 14px;border-bottom:1px dashed #E1E1E1;}.mod-dialog .dialog-wrap .tuijian li{display:inline;margin:10px 0 0 10px;float:left;width:178px;height:64px;padding:5px;background:#FAFAFA;border:1px solid #EEE;cursor:pointer;text-align:left;}.mod-dialog .dialog-wrap .tuijian li dl{display:inline;margin:0 5px 0 10px;width:99px;}
+.mod-dialog .dialog-wrap .tuijian li.tuijian-select{background:url("//honey.hunantv.com/i/image/icon/tuijian-ico.png") no-repeat 172px 58px #f1f5e9;border:1px solid #D5E2BE;}
+.mod-dialog .dialog-wrap .tuijian-quxiao{top:10px;right:220px;}
+.honey-tooltip-arrow{background-color:none;height:0;width:0;position:absolute;overflow:hidden;border:8px solid transparent;border-bottom-color:#cccccc;}.honey-tooltip-arrow.bottom{border-bottom-color:transparent;border-top-color:#cccccc;}
+.honey-dialog-conBox .honey-tooltip-content{height:100px;}

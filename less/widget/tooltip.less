@@ -1,0 +1,24 @@
+@import "../config.less";
+@import "../lib/css3.less";
+@import "../mod/mod-dialog.less";
+
+.honey-tooltip-arrow {
+    background-color: none;
+    height: 0;
+    width: 0;
+    position: absolute;
+    overflow: hidden;
+    border: 8px solid transparent;
+    border-bottom-color: #cccccc;
+    &.bottom {
+        border-bottom-color: transparent;
+        border-top-color: #cccccc;
+    }
+}
+
+.honey-dialog-conBox {
+        
+    .honey-tooltip-content {
+        height: 100px;
+    }
+}
