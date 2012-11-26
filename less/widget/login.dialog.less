@@ -15,7 +15,7 @@
         .border-radius(2px);
         .placeholder(#bfbfbf);
         height: 27px;
-        padding: 4px 6px;
+        padding: 3px 6px;
         font-size: 14px;
         line-height: 27px;
         color: gray;
@@ -63,6 +63,37 @@
             border-top: 1px solid #ddd;
             margin-top: 20px;
             padding-top: 10px;
+            &.noborder {
+                border-top: none;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            span {
+                display: block;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 11px;
+            }
+            a {
+                margin-right: 20px;
+            }
+        }
+        i {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            background: url("//@{public-url}sprites/public.png") no-repeat 0 0;
+            margin-right: 5px;
+            &.sina {
+                background-position: -62px -237px; 
+            }
+            &.qq {
+                background-position: -45px -237px; 
+            }
+            &.tqq {
+                background-position: -46px -254px; 
+            }
         }
 
     }
