@@ -97,7 +97,8 @@ a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .nologin-info{padding:10px;font-size:14px;background-color:#fff;padding-bottom:30px;}
 #honey-comment .honey-comment-text{margin-top:30px;}#honey-comment .honey-comment-text h5{font-size:12px;font-weight:200;}#honey-comment .honey-comment-text h5 img{display:inline-block;vertical-align:middle;margin-right:15px;}
 #honey-comment .honey-comment-text h5 span{color:#999;margin:0 10px;}
-#honey-comment .honey-comment-text .comment-input{border:1px solid #dfe1e1;margin-top:20px;position:relative;}#honey-comment .honey-comment-text .comment-input h5,#honey-comment .honey-comment-text .comment-input h4{height:70px;line-height:70px;background-color:#f6f6f6;padding:0 20px;font-size:14px;border-bottom:1px solid #dfe1e1;overflow:hidden;}
+#honey-comment .honey-comment-text .comment-input{border:1px solid #dfe1e1;margin-top:20px;position:relative;}#honey-comment .honey-comment-text .comment-input h5{font-size:12px;}
+#honey-comment .honey-comment-text .comment-input h5,#honey-comment .honey-comment-text .comment-input h4{height:70px;line-height:70px;background-color:#f6f6f6;padding:0 20px;font-size:14px;border-bottom:1px solid #dfe1e1;overflow:hidden;}
 #honey-comment .honey-comment-text .comment-input .textarea{padding:10px;position:relative;}
 #honey-comment .honey-comment-text .comment-input .notice{font-size:12px;text-align:center;line-height:80px;position:absolute;left:0;top:10px;width:100%;display:none;}#honey-comment .honey-comment-text .comment-input .notice i{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat;height:21px;width:21px;display:inline-block;vertical-align:text-bottom;overflow:hidden;margin-right:5px;}
 #honey-comment .honey-comment-text .comment-input .notice.success,#honey-comment .honey-comment-text .comment-input .notice.error{background-color:#fff;color:#222;font-size:20px;}
