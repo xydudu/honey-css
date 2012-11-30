@@ -1,683 +1,131 @@
-/**
- *name: base.less;
- *function: css reset, 工具类等;
- *creator: luozhiqiang;
- *modify: none;
- *update-time: 2012-05-14;
- **/
-/* 图片文件夹路�?*/
-/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
-html {
-  color: #444;
-  background: #F1F1F1;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-/* 内外边距通常让各个浏览器样式的表现位置不�?*/
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td,
-iframe,
-.h10,
-.h20 {
-  margin: 0;
-  padding: 0;
-}
-/* 去掉各Table  cell 的边距并让其边重�?*/
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* 去除默认边框 */
-fieldset,
-img {
-  border: 0;
-}
-/* 去掉列表前的标识, li 会继�?*/
-ol,
-ul {
-  list-style: none;
-}
-/* 去掉获取焦点的时候高�?*/
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  color: #444 !important;
-}
-/* 去掉iphone访问的一些默认样�?*/
-/* 禁止textarea输入框用户缩�?*/
-textarea {
-  overflow: auto;
-  resize: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-textarea,
-select,
-button {
-  font-size: 100%;
-}
-/* 去掉图片的默认间�?*/
-img {
-  display: block;
-}
-body {
-  font: 12px/1.5 'Helvetica Neue', Helvetica, Arial, Sans-serif;
-}
-a {
-  color: #093D72;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-/* 清理浮动 */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-/* 以图换字 */
-.hide-text {
-  text-indent: -1000px;
-  overflow: hidden;
-}
-.border-right {
-  border-right: 1px solid #CCC;
-}
-.no-border {
-  border: none !important;
-}
-.min-h {
-  font-size: 1px;
-  line-height: 1px;
-}
-.fl {
-  float: left;
-}
-.fr {
-  float: right !important;
-}
-.cb {
-  clear: both;
-}
-.cl {
-  clear: left;
-}
-.cr {
-  clear: right;
-}
-.tl {
-  text-align: left;
-}
-.tr {
-  text-align: right;
-}
-.tc {
-  text-align: center !important;
-}
-.pr {
-  position: relative;
-  left: 0;
-  top: 0;
-}
-.pa {
-  position: absolute;
-}
-.hide {
-  display: none;
-}
-.w64 {
-  width: 64px;
-}
-.pt20 {
-  padding-top: 20px;
-}
-.pl0 {
-  padding-left: 0px !important;
-}
-.pl10 {
-  padding-left: 10px !important;
-}
-.pr0 {
-  padding-right: 0px !important;
-}
-.p0 {
-  padding: 0 !important;
-}
-.p5 {
-  padding: 5px;
-}
-.pr10 {
-  padding-right: 10px;
-}
-.mt5 {
-  margin-top: 5px;
-}
-.mt10 {
-  margin-top: 10px;
-}
-.mt15 {
-  margin-top: 15px;
-}
-.mt20 {
-  margin-top: 20px;
-}
-.mt25 {
-  margin-top: 25px;
-}
-.mt30 {
-  margin-top: 30px;
-}
-.ml5 {
-  margin-left: 5px;
-}
-.ml10 {
-  margin-left: 10px;
-}
-.ml15 {
-  margin-left: 15px;
-}
-.ml20 {
-  margin-left: 20px;
-}
-.ml25 {
-  margin-left: 25px;
-}
-.ml30 {
-  margin-left: 30px;
-}
-.ml40 {
-  margin-left: 40px;
-}
-.ml135 {
-  margin-left: 135px;
-}
-.ml190 {
-  margin-left: 190px;
-}
-.ml45 {
-  margin-left: 45px;
-}
-.mr10 {
-  margin-right: 10px;
-}
-.mr20 {
-  margin-right: 20px;
-}
-.mb0 {
-  margin-bottom: 0 !important;
-}
-.f12 {
-  font-size: 12px !important;
-}
-.f14 {
-  font-size: 14px !important;
-}
-.bold {
-  font-weight: bold !important;
-}
-.bn {
-  font-weight: normal !important;
-}
-.underline {
-  text-decoration: underline !important;
-}
-.underline:hover {
-  text-decoration: none !important;
-}
-.c444 {
-  color: #444 !important;
-}
-.c666 {
-  color: #666 !important;
-}
-.c999 {
-  color: #999 !important;
-}
-.cc30 {
-  color: #C30;
-}
-.cccc {
-  color: #CCC !important;
-}
-.c093d72 {
-  color: #093D72 !important;
-}
-.c000 {
-  color: #000 !important;
-}
-.z1 {
-  z-index: 1;
-}
-.z5 {
-  z-index: 5;
-}
-.z10 {
-  z-index: 10;
-}
-.h20 {
-  height: 20px;
-}
-.h10 {
-  height: 10px;
-}
-#honey-comment h3 {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0 10px;
-}
-#honey-comment h3 span {
-  font-size: 12px;
-  color: gray;
-}
-#honey-comment textarea {
-  background-color: #fff;
-  font-size: 14px;
-}
-#honey-comment ul.honey-comment-list {
-  margin-top: 20px;
-  padding: 0 10px;
-}
-#honey-comment ul.honey-comment-list li {
-  border-bottom: 1px dotted #E1E1E1;
-  overflow: hidden;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-avatar {
-  float: left;
-  position: relative;
-}
-#honey-comment ul.honey-comment-list .honey-comment-avatar a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  border: 1px solid #dfdfdf;
-  padding: 1px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-avatar p {
-  text-align: center;
-  color: #9f9f9f;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body {
-  margin-left: 70px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body p {
-  margin-bottom: 5px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .top {
-  color: #999;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .content {
-  color: #222;
-  font-size: 14px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .actions {
-  text-align: right;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .actions a {
-  margin-left: 20px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .actions a strong {
-  color: #cc3216;
-  font-weight: 200;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .arrow {
-  position: absolute;
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat -19px -69px;
-  width: 10px;
-  height: 6px;
-  top: -5px;
-  overflow: hidden;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply,
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-content,
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents {
-  background-color: #f6f6f6;
-  border: 1px solid #dfe1e1;
-  color: #777777;
-  padding: 12px;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents {
-  background-color: #f9f7f0;
-  border-color: #dfd7b3;
-  color: #444;
-  padding: 3px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents small {
-  float: right;
-  color: #999;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents p {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents span {
-  color: #999;
-  display: block;
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-content p {
-  margin: 0;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .origin-content .arrow {
-  left: 10px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply {
-  padding: 0;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input {
-  position: relative;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input .notice {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 1px;
-  height: 34px;
-  display: none;
-  text-align: center;
-  line-height: 34px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input p {
-  padding: 10px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input input {
-  border: 0;
-  border-right: 1px solid #dfe1e1;
-  padding: 10px;
-  display: inline-block;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply table,
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input input {
-  width: 100%;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login {
-  padding: 10px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login span {
-  margin: 0 10px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login input {
-  margin-right: 10px;
-  padding: 3px;
-  width: 80px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .arrow {
-  right: 10px;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button {
-  width: 100px;
-  text-align: right;
-}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .nologin-info {
-  padding: 10px;
-  font-size: 14px;
-  background-color: #fff;
-  padding-bottom: 30px;
-}
-#honey-comment .bluebox-style {
-  border-top: 1px solid #c7dae2;
-  border-bottom: 4px solid #c7dae2;
-  background-color: #f3f8fe;
-}
-#honey-comment .honey-comment-text {
-  margin-top: 30px;
-  padding: 0 10px;
-}
-#honey-comment .honey-comment-text h5 {
-  font-size: 12px;
-  font-weight: 200;
-}
-#honey-comment .honey-comment-text h5 img {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px;
-}
-#honey-comment .honey-comment-text h5 span {
-  color: #999;
-  margin: 0 10px;
-}
-#honey-comment .honey-comment-text .comment-input {
-  border: 1px solid #dfe1e1;
-  margin-top: 20px;
-  position: relative;
-}
-#honey-comment .honey-comment-text .comment-input h5,
-#honey-comment .honey-comment-text .comment-input h4 {
-  height: 70px;
-  line-height: 70px;
-  background-color: #f6f6f6;
-  padding: 0 20px;
-  border-bottom: 1px solid #dfe1e1;
-  overflow: hidden;
-}
-#honey-comment .honey-comment-text .comment-input h5 {
-  font-size: 12px;
-}
-#honey-comment .honey-comment-text .comment-input .textarea {
-  padding: 10px;
-  position: relative;
-}
-#honey-comment .honey-comment-text .comment-input .notice {
-  font-size: 12px;
-  text-align: center;
-  line-height: 80px;
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 100%;
-  display: none;
-}
-#honey-comment .honey-comment-text .comment-input .notice i {
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat;
-  height: 21px;
-  width: 21px;
-  display: inline-block;
-  vertical-align: text-bottom;
-  overflow: hidden;
-  margin-right: 5px;
-}
-#honey-comment .honey-comment-text .comment-input .notice.success,
-#honey-comment .honey-comment-text .comment-input .notice.error {
-  background-color: #fff;
-  color: #222;
-  font-size: 20px;
-}
-#honey-comment .honey-comment-text .comment-input .notice.success i {
-  background-position: -99px -81px;
-}
-#honey-comment .honey-comment-text .comment-input .notice.error i {
-  background-position: -99px -51px;
-}
-#honey-comment .honey-comment-text .comment-input .notice,
-#honey-comment .honey-comment-text .comment-input textarea {
-  height: 90px;
-  width: 100%;
-  border: 0;
-}
-#honey-comment .honey-comment-text .comment-input p {
-  font-size: 12px;
-  color: #999;
-  margin: 0;
-  padding: 20px;
-  border-bottom: 1px solid #dfe1e1;
-  background-color: #f6f6f6;
-}
-#honey-comment .honey-comment-text .comment-input p input {
-  margin-right: 10px;
-  padding: 3px;
-  width: 100px;
-}
-#honey-comment .honey-comment-text .actions {
-  margin-top: 15px;
-  color: #999;
-}
-#honey-comment .selected,
-#honey-comment .emo-small-1,
-#honey-comment .emo-small-2,
-#honey-comment .emo-small-3,
-#honey-comment .emo-small-4,
-#honey-comment .emo-small-5,
-#honey-comment .emo-1,
-#honey-comment .emo-2,
-#honey-comment .emo-3,
-#honey-comment .emo-4,
-#honey-comment .emo-5 {
-  position: absolute;
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  top: 15px;
-  cursor: pointer;
-}
-#honey-comment .emo-small-1,
-#honey-comment .emo-small-2,
-#honey-comment .emo-small-3,
-#honey-comment .emo-small-4,
-#honey-comment .emo-small-5 {
-  width: 25px;
-  height: 25px;
-  top: 32px;
-  left: 32px;
-}
-#honey-comment .emo-small-1 {
-  background-position: -92px -180px;
-}
-#honey-comment .emo-small-2 {
-  background-position: -92px -264px;
-}
-#honey-comment .emo-small-3 {
-  background-position: -92px -236px;
-}
-#honey-comment .emo-small-4 {
-  background-position: -92px -152px;
-}
-#honey-comment .emo-small-5 {
-  background-position: -92px -208px;
-}
-#honey-comment .emo-1 {
-  background-position: 0 -152px;
-  right: 40px;
-}
-#honey-comment .emo-2 {
-  background-position: 0 -195px;
-  right: 100px;
-}
-#honey-comment .emo-3 {
-  background-position: 0 -237px;
-  right: 160px;
-}
-#honey-comment .emo-4 {
-  background-position: -44px -152px;
-  right: 220px;
-}
-#honey-comment .emo-5 {
-  background-position: -44px -195px;
-  right: 280px;
-}
-#honey-comment .btn {
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat -18px -78px;
-  border: none;
-  width: 65px;
-  height: 25px;
-  overflow: hidden;
-  color: #fff;
-  margin-right: 6px;
-  cursor: pointer;
-}
-#honey-comment .selected {
-  height: 10px;
-  width: 10px;
-  background-position: -19px -105px;
-  top: 45px;
-  z-index: 999;
-}
-#honey-comment .honey-comment-pages {
-  margin-top: 20px;
-  font-size: 16px;
-  text-align: right;
-}
-#honey-comment .honey-comment-pages a {
-  margin: 0 10px;
-  text-decoration: underline;
-  text-weight: 200;
-  display: inline-block;
-}
-#honey-comment .honey-comment-pages a.current {
-  text-decoration: none;
-  text-weight: 600;
-  color: red;
-}
-#honey-comment .honey-comment-pages a.next,
-#honey-comment .honey-comment-pages a.end,
-#honey-comment .honey-comment-pages a.prev,
-#honey-comment .honey-comment-pages a.first {
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;
-  overflow: hidden;
-}
-#honey-comment .honey-comment-pages a.prev {
-  width: 15px;
-  height: 13px;
-  background-position: -58px -106px;
-}
-#honey-comment .honey-comment-pages a.first {
-  width: 10px;
-  height: 13px;
-  background-position: -73px -106px;
-}
-#honey-comment .honey-comment-pages a.next {
-  width: 15px;
-  height: 13px;
-  background-position: -43px -106px;
-}
-#honey-comment .honey-comment-pages a.end {
-  width: 10px;
-  height: 13px;
-  background-position: -33px -106px;
-}
+html{color:#444;background:#F1F1F1;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,iframe,.h10,.h20{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+input:focus,textarea:focus,select:focus{outline:none;color:#444 !important;}
+textarea{overflow:auto;resize:none;}
+h1,h2,h3,h4,h5,h6,input,textarea,select,button{font-size:100%;}
+img{display:block;}
+body{font:12px/1.5 'Helvetica Neue',Helvetica,Arial,Sans-serif;}
+a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
+.clearfix{*zoom:1;}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.hide-text{text-indent:-1000px;overflow:hidden;}
+.border-right{border-right:1px solid #CCC;}
+.no-border{border:none !important;}
+.min-h{font-size:1px;line-height:1px;}
+.fl{float:left;}
+.fr{float:right !important;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center !important;}
+.pr{position:relative;left:0;top:0;}
+.pa{position:absolute;}
+.hide{display:none;}
+.w64{width:64px;}
+.pt20{padding-top:20px;}
+.pl0{padding-left:0px !important;}
+.pl10{padding-left:10px !important;}
+.pr0{padding-right:0px !important;}
+.p0{padding:0 !important;}
+.p5{padding:5px;}
+.pr10{padding-right:10px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml30{margin-left:30px;}
+.ml40{margin-left:40px;}
+.ml135{margin-left:135px;}
+.ml190{margin-left:190px;}
+.ml45{margin-left:45px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.mb0{margin-bottom:0 !important;}
+.f12{font-size:12px !important;}
+.f14{font-size:14px !important;}
+.bold{font-weight:bold !important;}
+.bn{font-weight:normal !important;}
+.underline{text-decoration:underline !important;}
+.underline:hover{text-decoration:none !important;}
+.c444{color:#444 !important;}
+.c666{color:#666 !important;}
+.c999{color:#999 !important;}
+.cc30{color:#C30;}
+.cccc{color:#CCC !important;}
+.c093d72{color:#093D72 !important;}
+.c000{color:#000 !important;}
+.z1{z-index:1;}
+.z5{z-index:5;}
+.z10{z-index:10;}
+.h20{height:20px;}
+.h10{height:10px;}
+#honey-comment h3{font-size:18px;font-weight:600;padding:0 10px;}#honey-comment h3 span{font-size:12px;color:gray;}
+#honey-comment textarea{background-color:#fff;font-size:14px;}
+#honey-comment ul.honey-comment-list{margin-top:20px;padding:0 10px;}#honey-comment ul.honey-comment-list li{border-bottom:1px dotted #E1E1E1;overflow:hidden;padding-bottom:10px;padding-top:10px;}
+#honey-comment ul.honey-comment-list .honey-comment-avatar{float:left;position:relative;}#honey-comment ul.honey-comment-list .honey-comment-avatar a{display:block;width:50px;height:50px;overflow:hidden;border:1px solid #dfdfdf;padding:1px;}
+#honey-comment ul.honey-comment-list .honey-comment-avatar p{text-align:center;color:#9f9f9f;}
+#honey-comment ul.honey-comment-list .honey-comment-body{margin-left:70px;}#honey-comment ul.honey-comment-list .honey-comment-body p{margin-bottom:5px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .top{color:#999;}
+#honey-comment ul.honey-comment-list .honey-comment-body .content{color:#222;font-size:14px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .actions{text-align:right;}#honey-comment ul.honey-comment-list .honey-comment-body .actions a{margin-left:20px;}#honey-comment ul.honey-comment-list .honey-comment-body .actions a strong{color:#cc3216;font-weight:200;}
+#honey-comment ul.honey-comment-list .honey-comment-body .arrow{position:absolute;background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat -19px -69px;width:10px;height:6px;top:-5px;overflow:hidden;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply,#honey-comment ul.honey-comment-list .honey-comment-body .origin-content,#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents{background-color:#f6f6f6;border:1px solid #dfe1e1;color:#777777;padding:12px;position:relative;margin-top:10px;margin-bottom:10px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents{background-color:#f9f7f0;border-color:#dfd7b3;color:#444;padding:3px;margin-top:0;margin-bottom:15px;}#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents small{float:right;color:#999;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents p{padding:5px 10px;font-size:14px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-contents span{color:#999;display:block;font-size:12px;margin-bottom:5px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-content p{margin:0;}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-content .arrow{left:10px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply{padding:0;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input{position:relative;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input .notice{position:absolute;width:100%;left:0;top:1px;height:34px;display:none;text-align:center;line-height:34px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input p{padding:10px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input input{border:0;border-right:1px solid #dfe1e1;padding:10px;display:inline-block;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply table,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input input{width:100%;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login{padding:10px;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login span{margin:0 10px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login input{margin-right:10px;padding:3px;width:80px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .arrow{right:10px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button{width:100px;text-align:right;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .nologin-info{padding:10px;font-size:14px;background-color:#fff;padding-bottom:30px;}
+#honey-comment .bluebox-style{border-top:1px solid #c7dae2;border-bottom:4px solid #c7dae2;background-color:#f3f8fe;}
+#honey-comment .honey-comment-text{margin-top:30px;padding:0 10px;}#honey-comment .honey-comment-text h5{font-size:12px;font-weight:200;}#honey-comment .honey-comment-text h5 img{display:inline-block;vertical-align:middle;margin-right:15px;}
+#honey-comment .honey-comment-text h5 span{color:#999;margin:0 10px;}
+#honey-comment .honey-comment-text .comment-input{border:1px solid #dfe1e1;margin-top:20px;position:relative;}#honey-comment .honey-comment-text .comment-input h5,#honey-comment .honey-comment-text .comment-input h4{height:70px;line-height:70px;background-color:#f6f6f6;padding:0 20px;border-bottom:1px solid #dfe1e1;overflow:hidden;}
+#honey-comment .honey-comment-text .comment-input h5{font-size:12px;}
+#honey-comment .honey-comment-text .comment-input .textarea{padding:10px;position:relative;}
+#honey-comment .honey-comment-text .comment-input .notice{font-size:12px;text-align:center;line-height:80px;position:absolute;left:0;top:10px;width:100%;display:none;}#honey-comment .honey-comment-text .comment-input .notice i{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat;height:21px;width:21px;display:inline-block;vertical-align:text-bottom;overflow:hidden;margin-right:5px;}
+#honey-comment .honey-comment-text .comment-input .notice.success,#honey-comment .honey-comment-text .comment-input .notice.error{background-color:#fff;color:#222;font-size:20px;}
+#honey-comment .honey-comment-text .comment-input .notice.success i{background-position:-99px -81px;}
+#honey-comment .honey-comment-text .comment-input .notice.error i{background-position:-99px -51px;}
+#honey-comment .honey-comment-text .comment-input .notice,#honey-comment .honey-comment-text .comment-input textarea{height:90px;width:100%;border:0;}
+#honey-comment .honey-comment-text .comment-input p{font-size:12px;color:#999;margin:0;padding:20px;border-bottom:1px solid #dfe1e1;background-color:#f6f6f6;}#honey-comment .honey-comment-text .comment-input p input{margin-right:10px;padding:3px;width:100px;}
+#honey-comment .honey-comment-text .actions{margin-top:15px;color:#999;}
+#honey-comment .selected,#honey-comment .emo-small-1,#honey-comment .emo-small-2,#honey-comment .emo-small-3,#honey-comment .emo-small-4,#honey-comment .emo-small-5,#honey-comment .emo-1,#honey-comment .emo-2,#honey-comment .emo-3,#honey-comment .emo-4,#honey-comment .emo-5{position:absolute;background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;width:40px;height:40px;overflow:hidden;top:15px;cursor:pointer;}
+#honey-comment .emo-small-1,#honey-comment .emo-small-2,#honey-comment .emo-small-3,#honey-comment .emo-small-4,#honey-comment .emo-small-5{width:25px;height:25px;top:32px;left:32px;}
+#honey-comment .emo-small-1{background-position:-92px -180px;}
+#honey-comment .emo-small-2{background-position:-92px -264px;}
+#honey-comment .emo-small-3{background-position:-92px -236px;}
+#honey-comment .emo-small-4{background-position:-92px -152px;}
+#honey-comment .emo-small-5{background-position:-92px -208px;}
+#honey-comment .emo-1{background-position:0 -152px;right:40px;}
+#honey-comment .emo-2{background-position:0 -195px;right:100px;}
+#honey-comment .emo-3{background-position:0 -237px;right:160px;}
+#honey-comment .emo-4{background-position:-44px -152px;right:220px;}
+#honey-comment .emo-5{background-position:-44px -195px;right:280px;}
+#honey-comment .btn{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat -18px -78px;border:none;width:65px;height:25px;overflow:hidden;color:#fff;margin-right:6px;cursor:pointer;}
+#honey-comment .selected{height:10px;width:10px;background-position:-19px -105px;top:45px;z-index:999;}
+#honey-comment .honey-comment-pages{margin-top:20px;font-size:16px;text-align:right;}#honey-comment .honey-comment-pages a{margin:0 10px;text-decoration:underline;text-weight:200;display:inline-block;}
+#honey-comment .honey-comment-pages a.current{text-decoration:none;text-weight:600;color:red;}
+#honey-comment .honey-comment-pages a.next,#honey-comment .honey-comment-pages a.end,#honey-comment .honey-comment-pages a.prev,#honey-comment .honey-comment-pages a.first{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;overflow:hidden;}
+#honey-comment .honey-comment-pages a.prev{width:15px;height:13px;background-position:-58px -106px;}
+#honey-comment .honey-comment-pages a.first{width:10px;height:13px;background-position:-73px -106px;}
+#honey-comment .honey-comment-pages a.next{width:15px;height:13px;background-position:-43px -106px;}
+#honey-comment .honey-comment-pages a.end{width:10px;height:13px;background-position:-33px -106px;}
