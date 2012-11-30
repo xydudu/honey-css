@@ -301,6 +301,7 @@ a:hover {
 #honey-comment h3 {
   font-size: 18px;
   font-weight: 600;
+  padding: 0 10px;
 }
 #honey-comment h3 span {
   font-size: 12px;
@@ -312,6 +313,7 @@ a:hover {
 }
 #honey-comment ul.honey-comment-list {
   margin-top: 20px;
+  padding: 0 10px;
 }
 #honey-comment ul.honey-comment-list li {
   border-bottom: 1px dotted #E1E1E1;
@@ -458,8 +460,14 @@ a:hover {
   background-color: #fff;
   padding-bottom: 30px;
 }
+#honey-comment .bluebox-style {
+  border-top: 1px solid #c7dae2;
+  border-bottom: 4px solid #c7dae2;
+  background-color: #f3f8fe;
+}
 #honey-comment .honey-comment-text {
   margin-top: 30px;
+  padding: 0 10px;
 }
 #honey-comment .honey-comment-text h5 {
   font-size: 12px;
