@@ -72,7 +72,8 @@ a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 .h10{height:10px;}
 #honey-comment h3{font-size:18px;font-weight:600;padding:0 10px;}#honey-comment h3 span{font-size:12px;color:gray;}
 #honey-comment textarea{background-color:#fff;font-size:14px;}
-#honey-comment ul.honey-comment-list{margin-top:20px;padding:0 10px;}#honey-comment ul.honey-comment-list li{border-bottom:1px dotted #E1E1E1;overflow:hidden;padding-bottom:10px;padding-top:10px;}
+#honey-comment ul.honey-comment-list{margin-top:20px;padding:0 10px;}#honey-comment ul.honey-comment-list h3{font-size:16px;margin:0;}
+#honey-comment ul.honey-comment-list li{border-bottom:1px dotted #E1E1E1;overflow:hidden;padding-bottom:10px;padding-top:10px;}
 #honey-comment ul.honey-comment-list .honey-comment-avatar{float:left;position:relative;}#honey-comment ul.honey-comment-list .honey-comment-avatar a{display:block;width:50px;height:50px;overflow:hidden;border:1px solid #dfdfdf;padding:1px;}
 #honey-comment ul.honey-comment-list .honey-comment-avatar p{text-align:center;color:#9f9f9f;}
 #honey-comment ul.honey-comment-list .honey-comment-body{margin-left:70px;}#honey-comment ul.honey-comment-list .honey-comment-body p{margin-bottom:5px;}
