@@ -465,6 +465,9 @@ a:hover {
   border-bottom: 4px solid #c7dae2;
   background-color: #f3f8fe;
 }
+#honey-comment .bluebox-style h4 {
+  font-size: 18px;
+}
 #honey-comment .honey-comment-text {
   margin-top: 30px;
   padding: 0 10px;
