@@ -140,12 +140,12 @@
   padding: 10px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login span {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login input {
   margin-right: 10px;
   padding: 3px;
-  width: 80px;
+  width: 70px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .arrow {
   right: 10px;
