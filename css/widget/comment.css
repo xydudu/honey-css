@@ -1,4 +1,7 @@
 /**/
+body {
+  font: 12px/1.5 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
 body,
 div,
 dl,
@@ -30,6 +33,9 @@ iframe,
 .h20 {
   margin: 0;
   padding: 0;
+}
+a {
+  color: #093D72;
 }
 #honey-comment h3 {
   font-size: 18px;
