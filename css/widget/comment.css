@@ -34,7 +34,7 @@ iframe,
   margin: 0;
   padding: 0;
 }
-a {
+.article-summry h1 a {
   color: #093D72;
 }
 .fr {
