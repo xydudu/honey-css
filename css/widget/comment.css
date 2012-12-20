@@ -40,6 +40,14 @@ a {
 .fr {
   float: right;
 }
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
 #honey-comment h3 {
   font-size: 18px;
   font-weight: 600;
