@@ -1,3 +1,36 @@
+/**/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+iframe,
+.h10,
+.h20 {
+  margin: 0;
+  padding: 0;
+}
 #honey-comment h3 {
   font-size: 18px;
   font-weight: 600;
