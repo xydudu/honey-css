@@ -48,6 +48,9 @@ iframe,
   height: 0;
   visibility: hidden;
 }
+#honey-comment a {
+  color: #093D72;
+}
 #honey-comment h3 {
   font-size: 18px;
   font-weight: 600;
@@ -64,9 +67,6 @@ iframe,
 #honey-comment ul.honey-comment-list {
   margin-top: 20px;
   padding: 0 10px;
-}
-#honey-comment ul.honey-comment-list a {
-  color: #093D72;
 }
 #honey-comment ul.honey-comment-list li {
   border-bottom: 1px dotted #E1E1E1;
