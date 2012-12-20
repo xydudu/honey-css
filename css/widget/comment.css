@@ -37,6 +37,9 @@ iframe,
 a {
   color: #093D72;
 }
+.fr {
+  float: right;
+}
 #honey-comment h3 {
   font-size: 18px;
   font-weight: 600;
