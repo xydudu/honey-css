@@ -247,39 +247,11 @@ a:hover {
   text-indent: -1000px;
   overflow: hidden;
 }
-.border-right {
-  border-right: 1px solid #CCC;
-}
-.no-border {
-  border: none !important;
-}
-.min-h {
-  font-size: 1px;
-  line-height: 1px;
-}
 .fl {
   float: left;
 }
 .fr {
   float: right !important;
-}
-.cb {
-  clear: both;
-}
-.cl {
-  clear: left;
-}
-.cr {
-  clear: right;
-}
-.tl {
-  text-align: left;
-}
-.tr {
-  text-align: right;
-}
-.tc {
-  text-align: center !important;
 }
 .pr {
   position: relative;
@@ -292,137 +264,17 @@ a:hover {
 .hide {
   display: none;
 }
-.w64 {
-  width: 64px;
-}
-.pt20 {
-  padding-top: 20px;
-}
-.pl0 {
-  padding-left: 0px !important;
-}
-.pl10 {
-  padding-left: 10px !important;
-}
-.pr0 {
-  padding-right: 0px !important;
-}
-.p0 {
-  padding: 0 !important;
-}
-.p5 {
-  padding: 5px;
-}
-.pr10 {
-  padding-right: 10px;
-}
-.mt5 {
-  margin-top: 5px;
-}
 .mt10 {
   margin-top: 10px;
 }
-.mt15 {
-  margin-top: 15px;
-}
-.mt20 {
-  margin-top: 20px;
-}
-.mt25 {
-  margin-top: 25px;
-}
-.mt30 {
-  margin-top: 30px;
-}
-.ml5 {
-  margin-left: 5px;
-}
-.ml10 {
-  margin-left: 10px;
-}
 .ml15 {
   margin-left: 15px;
-}
-.ml20 {
-  margin-left: 20px;
-}
-.ml25 {
-  margin-left: 25px;
-}
-.ml30 {
-  margin-left: 30px;
-}
-.ml40 {
-  margin-left: 40px;
-}
-.ml135 {
-  margin-left: 135px;
-}
-.ml190 {
-  margin-left: 190px;
-}
-.ml45 {
-  margin-left: 45px;
-}
-.mr10 {
-  margin-right: 10px;
-}
-.mr20 {
-  margin-right: 20px;
-}
-.mb0 {
-  margin-bottom: 0 !important;
-}
-.f12 {
-  font-size: 12px !important;
-}
-.f14 {
-  font-size: 14px !important;
-}
-.bold {
-  font-weight: bold !important;
-}
-.bn {
-  font-weight: normal !important;
 }
 .underline {
   text-decoration: underline !important;
 }
 .underline:hover {
   text-decoration: none !important;
-}
-.c444 {
-  color: #444 !important;
-}
-.c666 {
-  color: #666 !important;
-}
-.c999 {
-  color: #999 !important;
-}
-.cc30 {
-  color: #C30;
-}
-.cccc {
-  color: #CCC !important;
-}
-.c093d72 {
-  color: #093D72 !important;
-}
-.c000 {
-  color: #000 !important;
-}
-.z1 {
-  z-index: 1;
-}
-.z5 {
-  z-index: 5;
-}
-.z10 {
-  z-index: 10;
-}
-.h20 {
-  height: 20px;
 }
 .h10 {
   height: 10px;
