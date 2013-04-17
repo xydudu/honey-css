@@ -3,12 +3,12 @@
 @remote-image: "honey.hunantv.com/i/image/";
 
 .mod-photo-view{
-    width:1050px;
+    width:780px;
     position: absolute;
 }
 .mod-photo-view-con{
     background:url("//@{base-url}share/photobg.png") 0 0 repeat-y;
-    width:1050px;
+    width:780px;
     position:relative;
     .close-btn{
         display:block;
@@ -19,6 +19,7 @@
         right:-15px;
         top:-15px;
         cursor:pointer;
+        z-index:10;
     }
     .con-left{
         float:left;
@@ -269,25 +270,25 @@
     }
 }
 .photo-vlist{
-    width:1050px;
+    width:780px;
     height:110px;
     position:relative;    
 }
 .mod-photo-view-ulbg{
-    width:1050px;
+    width:780px;
     height:110px;
     background:#000;
     opacity:0.7; 
 }
 .mod-photo-view-ulbox{
-    width:1050px;
+    width:780px;
     height:110px;
     position:absolute;
     left:0;
     top:0;
     .ulbox-btn{
         display:block;
-        width:56px;
+        width:53px;
         height:110px;
         float:left;
         background:url("//@{base-url}icon/leftbtn.png") center center no-repeat;
@@ -300,9 +301,9 @@
         }
     }
     .ulbox-list{
-        width:924px;
-        padding:25px 0;
-        height:60px;
+        width:659px;
+        padding:23px 0;
+        height:64px;
         margin:0 7px;
         overflow:hidden;
         float:left;
@@ -312,10 +313,10 @@
         li{
             float:left;
             width:60px;
-            height:60px;
+            height:64px;
             overflow:hidden;
-            margin-left:4px;
-            border:1px solid #464646; 
+            margin-left:2px;
+            border:2px solid #464646; 
             &.on{
                 border-color:#C9775F;
             }
