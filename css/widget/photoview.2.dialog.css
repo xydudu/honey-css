@@ -1,5 +1,5 @@
 .mod-photo-view{width:780px;position:absolute;}
-.mod-photo-view-con{background:url("//honey.hunantv.com/i/image/share/photobg.png") 0 0 repeat-y;width:780px;position:relative;}.mod-photo-view-con .close-btn{display:block;position:absolute;width:45px;height:45px;background:url("//honey.hunantv.com/i/image/share/close1.png") left top no-repeat;right:-19px;top:-19px;cursor:pointer;z-index:10;}
+.mod-photo-view-con{background:url("//honey.hunantv.com/i/image/share/photobg.png") 0 0 repeat-y;width:780px;position:relative;}.mod-photo-view-con .close-btn{display:block;position:absolute;width:45px;height:45px;background:url("//honey.hunantv.com/i/image/share/close1-ie.png") left top no-repeat;right:-19px;top:-19px;cursor:pointer;z-index:10;}
 .mod-photo-view-con .con-left{float:left;width:780px;position:relative;}.mod-photo-view-con .con-left .prev-cur,.mod-photo-view-con .con-left .photo-next{display:block;width:390px;height:590px;cursor:url("http://i1.hunantv.com/ui/2011/images/gallery_cur_prev.cur"),auto;position:absolute;z-index:9;top:0;}.mod-photo-view-con .con-left .prev-cur:hover,.mod-photo-view-con .con-left .photo-next:hover{text-decoration:underline;}
 .mod-photo-view-con .con-left .prev-cur{left:0;}
 .mod-photo-view-con .con-left .photo-next{right:0;cursor:url("http://i1.hunantv.com/ui/2011/images/gallery_cur_next.cur"),auto;}
