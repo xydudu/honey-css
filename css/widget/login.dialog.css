@@ -1,386 +1,52 @@
-/* 内外边距通常让各个浏览器样式的表现位置不同 */
-/**
- *name: mod-dialog.less;
- *function: 弹出层模块基类;
- *creator: luozhiqiang;
- *modify: none;
- *update-time: 2012-05-23;
- **/
-.cancel-dialog-bt,
-.alert-bt,
-.jion-group,
-.red,
-.green,
-.yellow,
-.tuijian-select {
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;
-}
-.mod-dialog {
-  z-index: 200;
-  width: 334px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  overflow: hidden;
-}
-.mod-dialog .black {
-  z-index: -1;
-  width: 1999px;
-  height: 1999px;
-  filter: alpha(opacity=20);
-  opacity: 0.2;
-  left: 0;
-  top: 0;
-  background-color: #000;
-}
-.mod-dialog .dialog-wrap {
-  margin: 4px;
-  border: 1px solid #AFAEAE;
-  background-color: #FFF;
-}
-.mod-dialog .dialog-wrap h3 {
-  height: 30px;
-  line-height: 30px;
-  background-color: #F0F0F0;
-  font-size: 12px;
-  font-weight: normal;
-  color: #666;
-}
-.mod-dialog .dialog-wrap h3 .cancel-dialog-bt {
-  margin: 11px 15px 0 0;
-  width: 8px;
-  height: 7px;
-  background-position: 0 -88px;
-}
-.mod-dialog .dialog-wrap .alert-bt {
-  display: block;
-  width: 120px;
-  height: 40px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-}
-.mod-dialog .dialog-wrap .cancel-del {
-  top: 10px;
-  right: 60px;
-}
-.mod-dialog .dialog-wrap .info {
-  padding: 15px 12px;
-}
-.mod-dialog .dialog-wrap .info .text-input {
-  color: #999;
-  padding: 0 10px;
-  width: 278px;
-  height: 33px;
-  line-height: 33px;
-  border: 1px solid #DDD;
-}
-.mod-dialog .dialog-wrap .info textarea {
-  color: #999;
-  padding: 10px;
-  width: 278px;
-  height: 53px;
-  border: 1px solid #DDD;
-}
-.mod-dialog .dialog-wrap .info .cancel-dialog {
-  height: 25px;
-  line-height: 25px;
-}
-.mod-dialog .dialog-wrap .info .jion-group {
-  width: 78px;
-  height: 21px;
-  background-position: 0 -41px;
-}
-.mod-dialog .dialog-wrap .alert {
-  height: 80px;
-}
-.mod-dialog .dialog-wrap .alert .alert-ico {
-  line-height: 80px;
-  padding: 5px 0 5px 30px;
-}
-.mod-dialog .dialog-wrap .alert .red {
-  background-position: -99px -48px;
-}
-.mod-dialog .dialog-wrap .alert .green {
-  background-position: -99px -78px;
-}
-.mod-dialog .dialog-wrap .alert .yellow {
-  background-position: -99px -708px;
-}
-.mod-dialog .dialog-wrap .tuijian {
-  padding: 7px 0 20px 14px;
-  border-bottom: 1px dashed #E1E1E1;
-}
-.mod-dialog .dialog-wrap .tuijian li {
-  display: inline;
-  margin: 10px 0 0 10px;
-  float: left;
-  width: 178px;
-  height: 64px;
-  padding: 5px;
-  background: #FAFAFA;
-  border: 1px solid #EEE;
-  cursor: pointer;
-  text-align: left;
-}
-.mod-dialog .dialog-wrap .tuijian li dl {
-  display: inline;
-  margin: 0 5px 0 10px;
-  width: 99px;
-}
-.mod-dialog .dialog-wrap .tuijian li.tuijian-select {
-  background: url("//honey.hunantv.com/i/image/icon/tuijian-ico.png") no-repeat 172px 58px #f1f5e9;
-  border: 1px solid #D5E2BE;
-}
-.mod-dialog .dialog-wrap .tuijian-quxiao {
-  top: 10px;
-  right: 220px;
-}
-/**/
-html {
-  color: #444;
-  background: #F1F1F1;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-/* 内外边距通常让各个浏览器样式的表现位置不同 */
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-button,
-textarea,
-p,
-blockquote,
-th,
-td,
-iframe,
-.h10,
-.h20 {
-  margin: 0;
-  padding: 0;
-}
-/* 去掉各Table  cell 的边距并让其边重合 */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* 去除默认边框 */
-fieldset,
-img {
-  border: 0;
-}
-/* 去掉列表前的标识, li 会继承 */
-ol,
-ul {
-  list-style: none;
-}
-/* 去掉获取焦点的时候高亮 */
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  color: #444 !important;
-}
-/* 去掉iphone访问的一些默认样式 */
-/* 禁止textarea输入框用户缩放 */
-textarea {
-  overflow: auto;
-  resize: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-textarea,
-select,
-button {
-  font-size: 100%;
-}
-/* 去掉图片的默认间隙 */
-img {
-  display: block;
-}
-body {
-  font: 12px/1.5 'Helvetica Neue', Helvetica, Arial, Sans-serif;
-}
-a {
-  color: #093D72;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-/* 清理浮动 */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-/* 以图换字 */
-.hide-text {
-  text-indent: -1000px;
-  overflow: hidden;
-}
-.fl {
-  float: left;
-}
-.fr {
-  float: right !important;
-}
-.pr {
-  position: relative;
-  left: 0;
-  top: 0;
-}
-.pa {
-  position: absolute;
-}
-.hide {
-  display: none;
-}
-.mt10 {
-  margin-top: 10px;
-}
-.ml15 {
-  margin-left: 15px;
-}
-.underline {
-  text-decoration: underline !important;
-}
-.underline:hover {
-  text-decoration: none !important;
-}
-.h10 {
-  height: 10px;
-}
-/**/
-.mod-dialog .h10 {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.mod-dialog .honey-login-input {
-  width: 290px;
-  margin-bottom: 15px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  height: 27px;
-  padding: 3px 6px;
-  font-size: 14px;
-  line-height: 27px;
-  color: gray;
-  border: 1px solid #ddd;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear .2s, box-shadow linear .2s;
-  -moz-transition: border linear .2s, box-shadow linear .2s;
-  -o-transition: border linear .2s, box-shadow linear .2s;
-  transition: border linear .2s, box-shadow linear .2s;
-}
-.mod-dialog .honey-login-input:-moz-placeholder {
-  color: #bfbfbf;
-}
-.mod-dialog .honey-login-input:-ms-input-placeholder {
-  color: #bfbfbf;
-}
-.mod-dialog .honey-login-input::-webkit-input-placeholder {
-  color: #bfbfbf;
-}
-.mod-dialog .honey-login-submit {
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 -120px;
-  width: 90px;
-  height: 32px;
-  border: 0;
-  overflow: hidden;
-  color: #fff;
-  font-weight: 200px;
-  line-height: 32px;
-  cursor: pointer;
-}
-.mod-dialog .actions {
-  text-align: left;
-  padding: 0 8px;
-  margin: 0;
-  position: relative;
-  color: #999;
-}
-.mod-dialog .actions .set-cookies {
-  padding: 5px 20px;
-  display: inline-block;
-}
-.mod-dialog .actions .set-cookies input {
-  margin-right: 3px;
-}
-.mod-dialog .actions .forget-pass {
-  position: absolute;
-  right: 0;
-  top: 9px;
-}
-.mod-dialog .actions p {
-  clear: both;
-  margin: 0;
-  display: block;
-  border: none;
-  border: 0;
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
-  padding-top: 10px;
-}
-.mod-dialog .actions p.noborder {
-  border-top: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.mod-dialog .actions p span {
-  display: block;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 11px;
-}
-.mod-dialog .actions p a {
-  margin-right: 20px;
-}
-.mod-dialog .actions i {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  overflow: hidden;
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;
-  margin-right: 5px;
-}
-.mod-dialog .actions i.sina {
-  background-position: -62px -237px;
-}
-.mod-dialog .actions i.qq {
-  background-position: -45px -237px;
-}
-.mod-dialog .actions i.tqq {
-  background-position: -46px -254px;
-}
+.cancel-dialog-bt,.alert-bt,.jion-group,.red,.green,.yellow,.tuijian-select{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;}
+.mod-dialog{z-index:200;width:334px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;overflow:hidden;}.mod-dialog .black{z-index:-1;width:1999px;height:1999px;filter:alpha(opacity=20);opacity:0.2;left:0;top:0;background-color:#000;}
+.mod-dialog .dialog-wrap{margin:4px;border:1px solid #AFAEAE;background-color:#FFF;}.mod-dialog .dialog-wrap h3{height:30px;line-height:30px;background-color:#F0F0F0;font-size:12px;font-weight:normal;color:#666;}.mod-dialog .dialog-wrap h3 .cancel-dialog-bt{margin:11px 15px 0 0;width:8px;height:7px;background-position:0 -88px;}
+.mod-dialog .dialog-wrap .alert-bt{display:block;width:120px;height:40px;margin:0 auto;margin-bottom:25px;}
+.mod-dialog .dialog-wrap .cancel-del{top:10px;right:60px;}
+.mod-dialog .dialog-wrap .info{padding:15px 12px;}.mod-dialog .dialog-wrap .info .text-input{color:#999;padding:0 10px;width:278px;height:33px;line-height:33px;border:1px solid #DDD;}
+.mod-dialog .dialog-wrap .info textarea{color:#999;padding:10px;width:278px;height:53px;border:1px solid #DDD;}
+.mod-dialog .dialog-wrap .info .cancel-dialog{height:25px;line-height:25px;}
+.mod-dialog .dialog-wrap .info .jion-group{width:78px;height:21px;background-position:0 -41px;}
+.mod-dialog .dialog-wrap .alert{height:80px;}.mod-dialog .dialog-wrap .alert .alert-ico{line-height:80px;padding:5px 0 5px 30px;}
+.mod-dialog .dialog-wrap .alert .red{background-position:-99px -48px;}
+.mod-dialog .dialog-wrap .alert .green{background-position:-99px -78px;}
+.mod-dialog .dialog-wrap .alert .yellow{background-position:-99px -708px;}
+.mod-dialog .dialog-wrap .tuijian{padding:7px 0 20px 14px;border-bottom:1px dashed #E1E1E1;}.mod-dialog .dialog-wrap .tuijian li{display:inline;margin:10px 0 0 10px;float:left;width:178px;height:64px;padding:5px;background:#FAFAFA;border:1px solid #EEE;cursor:pointer;text-align:left;}.mod-dialog .dialog-wrap .tuijian li dl{display:inline;margin:0 5px 0 10px;width:99px;}
+.mod-dialog .dialog-wrap .tuijian li.tuijian-select{background:url("//honey.hunantv.com/i/image/icon/tuijian-ico.png") no-repeat 172px 58px #f1f5e9;border:1px solid #D5E2BE;}
+.mod-dialog .dialog-wrap .tuijian-quxiao{top:10px;right:220px;}
+html{color:#444;background:#F1F1F1;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,button,textarea,p,blockquote,th,td,iframe,.h10,.h20{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+input:focus,textarea:focus,select:focus{outline:none;color:#444 !important;}
+textarea{overflow:auto;resize:none;}
+h1,h2,h3,h4,h5,h6,input,textarea,select,button{font-size:100%;}
+img{display:block;}
+body{font:12px/1.5 'Helvetica Neue',Helvetica,Arial,Sans-serif;}
+a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
+.clearfix{*zoom:1;}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.hide-text{text-indent:-1000px;overflow:hidden;}
+.fl{float:left;}
+.fr{float:right !important;}
+.pr{position:relative;left:0;top:0;}
+.pa{position:absolute;}
+.hide{display:none;}
+.mt10{margin-top:10px;}
+.ml15{margin-left:15px;}
+.underline{text-decoration:underline !important;}
+.underline:hover{text-decoration:none !important;}
+.h10{height:10px;}
+.mod-dialog .h10{margin:0;padding:0;overflow:hidden;}
+.mod-dialog .honey-login-input{width:290px;margin-bottom:15px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;height:27px;padding:3px 6px;font-size:14px;line-height:27px;color:gray;border:1px solid #ddd;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition:border linear .2s, box-shadow linear .2s;-moz-transition:border linear .2s, box-shadow linear .2s;-o-transition:border linear .2s, box-shadow linear .2s;transition:border linear .2s, box-shadow linear .2s;}.mod-dialog .honey-login-input:-moz-placeholder{color:#bfbfbf;}
+.mod-dialog .honey-login-input:-ms-input-placeholder{color:#bfbfbf;}
+.mod-dialog .honey-login-input::-webkit-input-placeholder{color:#bfbfbf;}
+.mod-dialog .honey-login-submit{background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 -120px;width:90px;height:32px;border:0;overflow:hidden;color:#fff;font-weight:200px;line-height:32px;cursor:pointer;}
+.mod-dialog .actions{text-align:left;padding:0 8px;margin:0;position:relative;color:#999;}.mod-dialog .actions .set-cookies{padding:5px 20px;display:inline-block;}.mod-dialog .actions .set-cookies input{margin-right:3px;}
+.mod-dialog .actions .forget-pass{position:absolute;right:0;top:9px;}
+.mod-dialog .actions p{clear:both;margin:0;display:block;border:none;border:0;border-top:1px solid #ddd;margin-top:20px;padding-top:10px;}.mod-dialog .actions p.noborder{border-top:none;margin-top:10px;margin-bottom:10px;}
+.mod-dialog .actions p span{display:block;padding:0;margin:0;margin-bottom:11px;}
+.mod-dialog .actions p a{margin-right:20px;}
+.mod-dialog .actions i{display:inline-block;width:16px;height:16px;overflow:hidden;background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;margin-right:5px;}.mod-dialog .actions i.sina{background-position:-62px -237px;}
+.mod-dialog .actions i.qq{background-position:-45px -237px;}
+.mod-dialog .actions i.tqq{background-position:-46px -254px;}
