@@ -13,11 +13,11 @@
     .close-btn{
         display:block;
         position:absolute;
-        width:37px;
-        height:37px;
-        background:url("//@{base-url}share/close1.png") 0 0 no-repeat;
-        right:-15px;
-        top:-15px;
+        width:45px;
+        height:45px;
+        background:url("//@{base-url}share/close1.png") left top no-repeat;
+        right:-19px;
+        top:-19px;
         cursor:pointer;
         z-index:10;
     }
@@ -31,6 +31,7 @@
             height:590px;
             cursor:url("http://i1.hunantv.com/ui/2011/images/gallery_cur_prev.cur"), auto;
             position:absolute;
+            z-index:9;
             top:0;
             &:hover{
                 text-decoration:underline;
@@ -278,6 +279,7 @@
     width:780px;
     height:110px;
     background:#000;
+    filter:alpha(opacity=70);
     opacity:0.7; 
 }
 .mod-photo-view-ulbox{
@@ -312,6 +314,7 @@
         width:1000px;
         li{
             float:left;
+            display:inline;
             width:60px;
             height:64px;
             overflow:hidden;
