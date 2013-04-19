@@ -22,20 +22,23 @@
         z-index:10;
     }
     .con-left{
-        float:left;
         width:780px;   
         position:relative;
         .prev-cur,.photo-next{
+            //background-color: yellow;
             display:block;
             width:390px;
-            height:590px;
+            max-height: 590px;
+            min-height: 290px;
             cursor:url("http://i1.hunantv.com/ui/2011/images/gallery_cur_prev.cur"), auto;
             position:absolute;
             z-index:9;
             top:0;
-            &:hover{
-                text-decoration:underline;
-            }
+            overflow: hidden;
+            //height: 100%;
+            //&:hover{
+            //    text-decoration:underline;
+            //}
         }
         .prev-cur{
             left:0; 
@@ -46,46 +49,58 @@
         }
         .con-lpic-box{
             width:780px;            
-            height:590px;
+            max-height: 590px;
+            min-height: 290px;
             display:table-cell;
             vertical-align:middle;
-            ul{
-                width:780px;
-                height:590px;
-                overflow:hidden;
-                li{
-                   display:none;
-                   float:left;
-                   width:780px;
-                   height:590px;
-                   text-align:center;
-                   line-height:590px;
-                   &.cur{
-                        display:block;
-                   } 
-                   .img-loading{
-                        display:none;
-                        margin:20px auto;
-                        width:100px;
-                        height:100px;
-                        background:url("//@{base-url}active-man/0504317.gif") center center no-repeat;                        
-                    }
-                    img{
-                        vertical-align:middle;
-                        max-width:780px;
-                        max-height:590px;
-                        margin:0 auto;
-                    }
-                }
-            } 
+            text-align: center;
+            //ul{
+            //    width:780px;
+            //    height:590px;
+            //    overflow:hidden;
+            //    li{
+            //       display:none;
+            //       float:left;
+            //       width:780px;
+            //       height:590px;
+            //       text-align:center;
+            //       line-height:590px;
+            //       &.cur{
+            //            display:block;
+            //       } 
+            .img-loading{
+                display:none;
+                margin:20px auto;
+                width:100px;
+                height:100px;
+                background:url("//@{base-url}active-man/0504317.gif") center center no-repeat;                        
+            }
+            //        img{
+            //            vertical-align:middle;
+            //            max-width:780px;
+            //            max-height:590px;
+            //            margin:0 auto;
+            //        }
+            //    }
+            //} 
         }
         .con-left-handle{
-            width:90px;
-            height:25px;
-            padding:15px 330px;
+            //height:25px;
+            //padding:15px 330px;
+            //bottom: 20px;
+            //left: 50%;
+            //margin-left: -50px;
+            //position: absolute;
+            //width: 100px;
+            display: block;
+            position: relative;
+            z-index: 999;
+            text-align: center;
+            height: 30px;
+            padding-top: 10px;
             span{
-                display:block;
-                float:left;
+                display: inline-block;
+                //float:left;
                 cursor:pointer;
                 width:25px;
                 height:25px;
