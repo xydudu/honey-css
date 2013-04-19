@@ -4,6 +4,7 @@
 .mod-photo-view{
     width:780px;
     position: absolute;
+    z-index: 999;
 }
 .mod-photo-view-con{
     background:url("//@{base-url}share/photobg.png") 0 0 repeat-y;
@@ -53,6 +54,9 @@
             display:table-cell;
             vertical-align:middle;
             text-align: center;
+            img {
+                display: inline-block;
+            }
             //ul{
             //    width:780px;
             //    height:590px;
@@ -343,4 +347,3 @@
         }
     }
 }
-
