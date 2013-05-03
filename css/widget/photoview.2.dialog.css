@@ -24,9 +24,9 @@
 .photoview-index-page li .ico-page-last{width:10px;background:url("//honey.hunantv.com/i/image/icon/ico-page-last.png") center center no-repeat;}.photoview-index-page li .ico-page-last:hover{background:url("//honey.hunantv.com/i/image/icon/ico-page-last-hover.png") center center no-repeat;}
 .mes-tex{width:100%;padding:15px 0;}.mes-tex .mes-tex-til{width:100%;display:block;color:#777;padding-bottom:10px;text-align:left;}
 .mes-tex textarea{border:1px solid #d8d8d8;background:#fff;padding:4px;width:220px;height:45px;}
-.photo-vlist{width:780px;height:110px;position:relative;}
-.mod-photo-view-ulbg{width:780px;height:110px;background:#000;filter:alpha(opacity=70);opacity:0.7;}
-.mod-photo-view-ulbox{width:780px;height:110px;position:absolute;left:0;top:0;}.mod-photo-view-ulbox .ulbox-btn{display:block;width:53px;height:110px;float:left;background:url("//honey.hunantv.com/i/image/icon/leftbtn.png") center center no-repeat;cursor:pointer;}.mod-photo-view-ulbox .ulbox-btn:hover{opacity:0.8;}
+.photo-vlist{width:780px;height:74px;position:relative;}
+.mod-photo-view-ulbg{width:780px;height:74px;background:#000;filter:alpha(opacity=70);opacity:0.7;}
+.mod-photo-view-ulbox{width:780px;height:74px;position:absolute;left:0;top:0;}.mod-photo-view-ulbox .ulbox-btn{display:block;width:53px;height:74px;float:left;background:url("//honey.hunantv.com/i/image/icon/leftbtn.png") center center no-repeat;cursor:pointer;}.mod-photo-view-ulbox .ulbox-btn:hover{opacity:0.8;}
 .mod-photo-view-ulbox .ulbox-btn.r-btn{background:url("//honey.hunantv.com/i/image/icon/rightbtn.png") center center no-repeat;}
-.mod-photo-view-ulbox .ulbox-list{width:659px;padding:23px 0;height:64px;margin:0 7px;overflow:hidden;float:left;}
+.mod-photo-view-ulbox .ulbox-list{width:659px;margin:0 7px;padding:2px 0;overflow:hidden;float:left;}
 .mod-photo-view-ulbox .mod-photo-view-ullist{width:1000px;}.mod-photo-view-ulbox .mod-photo-view-ullist li{float:left;display:inline;width:60px;height:64px;overflow:hidden;margin-left:2px;border:2px solid #464646;}.mod-photo-view-ulbox .mod-photo-view-ullist li.on{border-color:#C9775F;}
