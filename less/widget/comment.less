@@ -139,6 +139,9 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
                 padding: 0;
                 .reply-input {
                     position: relative;
+                    padding: 10px;
+                    background-color: #fff;
+
                     .notice {
                         position: absolute;
                         //background-color: #cb4b4b;
@@ -155,10 +158,10 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
                         padding: 10px;    
                     }
                     input {
-                        border: 0; 
-                        border-right: 1px solid #dfe1e1;
-                        padding: 10px;
-                        display: inline-block;
+                        border: none; 
+                        //border-right: 1px solid #dfe1e1;
+                        //padding: 10px;
+                        //display: inline-block;
                     }
                 }
                 
@@ -182,6 +185,13 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
                 .reply-button {
                     width: 100px;
                     text-align: right;
+                    padding: 5px;
+                    img {
+                        vertical-align: bottom;
+                    }
+                    input {
+                        width: 60px;
+                    }
                 }
                 .nologin-info {
                     padding: 10px;
@@ -293,6 +303,14 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
         .actions {
             margin-top: 15px;
             color: #999;
+            .fr {
+                input {
+                    width: 60px;
+                }
+                img {
+                    vertical-align: bottom;
+                }
+            }
         }
     }
 

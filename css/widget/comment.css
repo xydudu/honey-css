@@ -19,14 +19,15 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,butto
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-contents span{color:#999;display:block;font-size:12px;margin-bottom:5px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content p{margin:0;}
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content .arrow{left:10px;}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply{padding:0;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input{position:relative;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input .notice{position:absolute;width:100%;left:0;top:1px;height:34px;display:none;text-align:center;line-height:34px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply{padding:0;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input{position:relative;padding:10px;background-color:#fff;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input .notice{position:absolute;width:100%;left:0;top:1px;height:34px;display:none;text-align:center;line-height:34px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input p{padding:10px;}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input input{border:0;border-right:1px solid #dfe1e1;padding:10px;display:inline-block;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input input{border:none;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply table,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-input input{width:100%;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login{padding:10px;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login span{margin:0 5px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-login input{margin-right:10px;padding:3px;width:70px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .arrow{right:10px;}
-#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button{width:100px;text-align:right;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button{width:100px;text-align:right;padding:5px;}#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button img{vertical-align:bottom;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button input{width:60px;}
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .nologin-info{padding:10px;font-size:14px;background-color:#fff;padding-bottom:30px;}
 #honey-comment .bluebox-style{border-top:1px solid #c7dae2;border-bottom:4px solid #c7dae2;background-color:#f3f8fe;}#honey-comment .bluebox-style h4{font-size:18px;color:#093d72;}
 #honey-comment .honey-comment-text{margin-top:30px;padding:0 10px;}#honey-comment .honey-comment-text h5{font-size:12px;font-weight:200;}#honey-comment .honey-comment-text h5 img{display:inline-block;vertical-align:middle;margin-right:15px;}
@@ -40,7 +41,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,butto
 #honey-comment .honey-comment-text .comment-input .notice.error i{background-position:-99px -51px;}
 #honey-comment .honey-comment-text .comment-input .notice,#honey-comment .honey-comment-text .comment-input textarea{height:90px;width:100%;border:0;}
 #honey-comment .honey-comment-text .comment-input p{font-size:12px;color:#999;margin:0;padding:20px;border-bottom:1px solid #dfe1e1;background-color:#f6f6f6;}#honey-comment .honey-comment-text .comment-input p input{margin-right:10px;padding:3px;width:100px;}
-#honey-comment .honey-comment-text .actions{margin-top:15px;color:#999;}
+#honey-comment .honey-comment-text .actions{margin-top:15px;color:#999;}#honey-comment .honey-comment-text .actions .fr input{width:60px;}
+#honey-comment .honey-comment-text .actions .fr img{vertical-align:bottom;}
 #honey-comment .selected,#honey-comment .emo-small-1,#honey-comment .emo-small-2,#honey-comment .emo-small-3,#honey-comment .emo-small-4,#honey-comment .emo-small-5,#honey-comment .emo-1,#honey-comment .emo-2,#honey-comment .emo-3,#honey-comment .emo-4,#honey-comment .emo-5{position:absolute;background:url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;width:40px;height:40px;overflow:hidden;top:15px;cursor:pointer;}
 #honey-comment .emo-small-1,#honey-comment .emo-small-2,#honey-comment .emo-small-3,#honey-comment .emo-small-4,#honey-comment .emo-small-5{width:25px;height:25px;top:32px;left:32px;}
 #honey-comment .emo-small-1{background-position:-92px -180px;}
