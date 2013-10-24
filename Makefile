@@ -4,6 +4,9 @@ photoview:
 	lessc -x $(PWD)/less/widget/photoview.2.dialog.less > $(PWD)/css/widget/photoview.2.dialog.css
 	lessc -x $(PWD)/less/widget/photoview.2.dialog.ie.less > $(PWD)/css/widget/photoview.2.dialog.ie.css
 
+comment:
+	lessc -x $(PWD)/less/widget/comment.less > $(PWD)/css/widget/comment.css
+
 lessc:
 	lessc -x $(PWD)/less/honey.less > $(PWD)/css/honey.css
 	lessc -x $(PWD)/less/widget/login.dialog.less > $(PWD)/css/widget/login.dialog.css

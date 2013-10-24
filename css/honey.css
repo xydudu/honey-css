@@ -6,7 +6,6 @@ ol,ul{list-style:none;}
 input:focus,textarea:focus,select:focus{outline:none;color:#444 !important;}
 textarea{overflow:auto;resize:none;}
 h1,h2,h3,h4,h5,h6,input,textarea,select,button{font-size:100%;}
-img{display:block;}
 body{font:12px/1.5 'Helvetica Neue',Helvetica,Arial,Sans-serif;}
 a{color:#093D72;text-decoration:none;}a:hover{text-decoration:underline;}
 .clearfix{*zoom:1;}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
