@@ -47,34 +47,34 @@ iframe,
 #honey-comment a {
   color: #848484;
 }
-#honey-comment .honey-comment-page {
+#honey-comment .honey-comment-pages {
   margin: 20px 0;
   padding: 0 10px;
   text-align: right;
 }
-#honey-comment .honey-comment-page a {
+#honey-comment .honey-comment-pages a {
   padding: 5px;
   line-height: 19px;
   overflow: hidden;
   font-weight: bold;
   color: #aeaeae;
 }
-#honey-comment .honey-comment-page a:hover,
-#honey-comment .honey-comment-page a.on {
+#honey-comment .honey-comment-pages a:hover,
+#honey-comment .honey-comment-pages a.on {
   color: #ff8400;
 }
-#honey-comment .honey-comment-page a.page-btnl {
+#honey-comment .honey-comment-pages a.page-btnl {
   padding: 5px 10px;
   background: url("//honey.hunantv.com/i/image/icon/btn1.png") no-repeat center center;
 }
-#honey-comment .honey-comment-page a.page-btnl:hover {
+#honey-comment .honey-comment-pages a.page-btnl:hover {
   background: url("//honey.hunantv.com/i/image/icon/btn1-0.png") no-repeat center center;
 }
-#honey-comment .honey-comment-page a.page-btnr {
+#honey-comment .honey-comment-pages a.page-btnr {
   padding: 5px 10px;
   background: url("//honey.hunantv.com/i/image/icon/btn2.png") no-repeat center center;
 }
-#honey-comment .honey-comment-page a.page-btnr:hover {
+#honey-comment .honey-comment-pages a.page-btnr:hover {
   background: url("//honey.hunantv.com/i/image/icon/btn2-0.png") no-repeat center center;
 }
 #honey-comment h3 {
@@ -573,47 +573,4 @@ iframe,
   background-position: -19px -105px;
   top: 45px;
   z-index: 999;
-}
-#honey-comment .honey-comment-pages {
-  margin-top: 20px;
-  font-size: 16px;
-  text-align: right;
-}
-#honey-comment .honey-comment-pages a {
-  margin: 0 10px;
-  text-decoration: underline;
-  text-weight: 200;
-  display: inline-block;
-}
-#honey-comment .honey-comment-pages a.current {
-  text-decoration: none;
-  text-weight: 600;
-  color: red;
-}
-#honey-comment .honey-comment-pages a.next,
-#honey-comment .honey-comment-pages a.end,
-#honey-comment .honey-comment-pages a.prev,
-#honey-comment .honey-comment-pages a.first {
-  background: url("//honey.hunantv.com/img/sprites/public.png") no-repeat 0 0;
-  overflow: hidden;
-}
-#honey-comment .honey-comment-pages a.prev {
-  width: 15px;
-  height: 13px;
-  background-position: -58px -106px;
-}
-#honey-comment .honey-comment-pages a.first {
-  width: 10px;
-  height: 13px;
-  background-position: -73px -106px;
-}
-#honey-comment .honey-comment-pages a.next {
-  width: 15px;
-  height: 13px;
-  background-position: -43px -106px;
-}
-#honey-comment .honey-comment-pages a.end {
-  width: 10px;
-  height: 13px;
-  background-position: -33px -106px;
 }
