@@ -266,11 +266,11 @@ iframe,
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button img {
   vertical-align: middle;
-  width: auto;
-  height: auto;
+  width: 90px;
+  height: 30px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button input {
-  width: 84px;
+  width: 64px;
   height: 28px;
   background: #f6f6f6;
   color: #dcdcdc;
@@ -476,7 +476,7 @@ iframe,
   padding: 0 10px;
 }
 #honey-comment .honey-comment-text .actions .fr input {
-  width: 84px;
+  width: 64px;
   background: none repeat scroll 0 0 #F6F6F6;
   border: 1px solid #DCDCDC;
   border-radius: 2px 2px 2px 2px;
@@ -558,13 +558,13 @@ iframe,
 #honey-comment .btn {
   background: #fe992b;
   border-radius: 2px;
-  width: 139px;
+  width: 50px;
   height: 31px;
-  overflow: hidden;
   color: #fff;
   margin-right: 6px;
   cursor: pointer;
   line-height: 28px;
+  overflow: hidden;
   border: 0;
 }
 #honey-comment .selected {
