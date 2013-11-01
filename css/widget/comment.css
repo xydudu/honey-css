@@ -484,9 +484,11 @@ iframe,
   border-radius: 2px 2px 2px 2px;
   color: #DCDCDC;
   height: 28px;
+  display: inline-block;
 }
 #honey-comment .honey-comment-text .actions .fr img {
   vertical-align: middle;
+  display: inline-block;
 }
 #honey-comment .selected,
 #honey-comment .emo-small-1,
