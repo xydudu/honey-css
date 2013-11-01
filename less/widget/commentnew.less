@@ -322,52 +322,74 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
                     margin: 0 10px;
                 }
             } 
-            .combox-face{
-                display:block;
+            
+            .combox-face-main {
+                position: relative; 
                 float:left;
-                margin-top:13px;
-                _margin-top:8px;
-                height:47px;
-                line-height:47px;
-                a{
-                    float:left;
+                width: 30px;
+                height: 60px;
+                .all-a {
+                    width: 30px;
+                    height: 60px;
                     display:block;
-                    width:40px;
-                    height:36px;
-                    margin-left:10px;
-                    overflow:hidden;
-                    background:url("//@{public-url}icon/face.png") no-repeat;
-                    &.face-1{
-                        background-position:0 0;
-                        &:hover,&.on,&.selected{
-                            background-position:0 -51px;
-                        }
+                    background:url("//@{public-url}icon/ico-02.png") center center no-repeat;
+                    &:hover, &.on{
+                        background:url("//@{public-url}icon/ico-01.png") center center no-repeat;
                     }
-                    &.face-2{
-                        background-position:-50px 0;
-                        &:hover,&.on,&.selected{
-                            background-position:-50px -51px;
+                }
+                .combox-face {
+                    display: none;
+                    position:absolute;
+                    top:45px;
+                    left:-10px;
+                    padding-top:7px;
+                    width:251px;
+                    height:54px;
+                    line-height:54px;
+                    z-index:10;
+                    background:url("//@{public-url}icon/ico-03.png") 0 0 no-repeat;
+                    a{
+                        float:left;
+                        display:block;
+                        width:40px;
+                        height:36px;
+                        margin-left:10px;
+                        margin-top:10px;
+                        overflow:hidden;
+                        background:url("//@{public-url}icon/face.png") no-repeat;
+                        &.face-1{
+                            background-position:0 0;
+                            &:hover,&.on{
+                                background-position:0 -51px;
+                            }
                         }
-                    }
-                    &.face-3{
-                        background-position:-99px 0;
-                        &:hover,&.on,&.selected{
-                            background-position:-99px -51px;
+                        &.face-2{
+                            background-position:-50px 0;
+                            &:hover,&.on{
+                                background-position:-50px -51px;
+                            }
                         }
-                    }
-                    &.face-4{
-                        background-position:-148px 0;
-                        &:hover,&.on,&.selected{
-                            background-position:-148px -51px;
+                        &.face-3{
+                            background-position:-99px 0;
+                            &:hover,&.on{
+                                background-position:-99px -51px;
+                            }
                         }
-                    }
-                    &.face-5{
-                        background-position:-197px 0;
-                        &:hover,&.on,&.selected{
-                            background-position:-197px -51px;
+                        &.face-4{
+                            background-position:-148px 0;
+                            &:hover,&.on{
+                                background-position:-148px -51px;
+                            }
+                        }
+                        &.face-5{
+                            background-position:-197px 0;
+                            &:hover,&.on{
+                                background-position:-197px -51px;
+                            }
                         }
                     }
                 }
+                
             }
         }
         
