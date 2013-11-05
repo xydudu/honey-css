@@ -134,6 +134,7 @@ iframe,
 #honey-comment ul.honey-comment-list .honey-comment-body .content {
   color: #545454;
   font-size: 14px;
+  padding-top: 20px!important;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .actions {
   text-align: left;
@@ -321,8 +322,8 @@ iframe,
 #honey-comment .honey-comment-text .com-box-til h5 {
   font-size: 12px;
   font-weight: 200;
-  width: 320px;
   float: left;
+  margin-right: 20px;
 }
 #honey-comment .honey-comment-text .com-box-til h5 em {
   color: #ff8400;
