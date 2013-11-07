@@ -173,6 +173,10 @@ iframe,
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content {
   border-radius: 3px;
 }
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-content p {
+  display: block;
+  width: 100%;
+}
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-contents {
   border-color: #dcdcdc;
   color: #444;
@@ -203,14 +207,14 @@ iframe,
   margin-bottom: 5px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content p {
-  margin: 0;
+  display: block;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content p em {
   color: #637792;
   display: block;
   width: 100%;
   font-style: normal;
-  padding-bottom: 5px;
+  overflow: hidden;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content p em a {
   color: #637792;
@@ -284,8 +288,8 @@ iframe,
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button img {
   vertical-align: middle;
-  width: 90px;
-  height: 30px;
+  width: 140px;
+  height: 20px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button input {
   width: 64px;
@@ -338,6 +342,8 @@ iframe,
   font-size: 12px;
   font-weight: 200;
   float: left;
+  line-height: 60px;
+  _padding-top: 10px;
   margin-right: 20px;
 }
 #honey-comment .honey-comment-text .com-box-til h5 em {
@@ -378,12 +384,13 @@ iframe,
   width: 251px;
   height: 54px;
   line-height: 54px;
-  z-index: 10;
+  z-index: 20;
   background: url("//honey.hunantv.com/img/icon/ico-03.png") 0 0 no-repeat;
 }
 #honey-comment .honey-comment-text .com-box-til .combox-face-main .combox-face a {
   float: left;
-  display: block;
+  display: inline-block;
+  _display: inline;
   width: 40px;
   height: 36px;
   margin-left: 10px;
@@ -429,7 +436,6 @@ iframe,
 #honey-comment .honey-comment-text .comment-input {
   border: 1px solid #dfe1e1;
   margin-top: 5px;
-  position: relative;
   border-radius: 3px 3px 0 0;
 }
 #honey-comment .honey-comment-text .comment-input h5,
@@ -446,7 +452,6 @@ iframe,
 }
 #honey-comment .honey-comment-text .comment-input .textarea {
   padding: 10px;
-  position: relative;
 }
 #honey-comment .honey-comment-text .comment-input .notice {
   font-size: 12px;
@@ -611,4 +616,44 @@ iframe,
   background-position: -19px -105px;
   top: 45px;
   z-index: 999;
+}
+#honey-comment .honey-comment-text .actions .fr,
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr {
+  height: 43px;
+  line-height: 43px;
+  position: relative;
+  text-align: left;
+  width: 310px;
+}
+#honey-comment .honey-comment-text .actions .fr .btn,
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr .btn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+#honey-comment .honey-comment-text .actions .fr img,
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr img {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  width: 140px;
+  height: 20px;
+}
+#honey-comment .honey-comment-text .actions .fr input,
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr input {
+  position: absolute;
+  right: 205px;
+  top: 5px;
+  width: 54px;
+}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr {
+  height: 28px;
+  line-height: 28px;
+}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr .btn,
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr input {
+  top: -1px;
+}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr img {
+  top: 5px;
 }

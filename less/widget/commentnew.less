@@ -146,6 +146,12 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
             .reply,.origin-content{
                 border-radius:3px;
             }
+            .origin-content{
+                p{
+                    display:block;
+                    width:100%;
+                }
+            }
             .origin-contents {
                 border-color: #dcdcdc;
                 color: #444;
@@ -180,13 +186,13 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
             }
             .origin-content {
                 p {
-                    margin: 0;
+                    display:block;
                     em{
                         color:#637792;
                         display:block;
                         width:100%;
                         font-style:normal;
-                        padding-bottom:5px;
+                        overflow:hidden;
                         a {
                             color:#637792;
                             font-weight:normal;
@@ -265,8 +271,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
                     }
                     img {
                         vertical-align: middle;
-                        width: 90px;
-                        height: 30px;
+                        width:140px;
+                        height:20px;
 
                     }
                     input {
@@ -323,6 +329,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
                 font-size: 12px;
                 font-weight: 200;
                 float:left;
+                line-height:60px;
+                _padding-top:10px;
                 margin-right: 20px;
                 em{
                     color:#ff8400;
@@ -362,11 +370,12 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
                     width:251px;
                     height:54px;
                     line-height:54px;
-                    z-index:10;
+                    z-index:20;
                     background:url("//@{public-url}icon/ico-03.png") 0 0 no-repeat;
                     a{
                         float:left;
-                        display:block;
+                        display:inline-block;
+                        _display:inline;
                         width:40px;
                         height:36px;
                         margin-left:10px;
@@ -412,7 +421,6 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
         .comment-input {
             border: 1px solid #dfe1e1; 
             margin-top: 5px;
-            position: relative;
             border-radius: 3px 3px 0 0;
             h5, h4 {
                 height: 70px;
@@ -428,7 +436,6 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
             }
             .textarea {
                 padding: 10px;
-                position: relative;
             }
             .notice {
                 //background-color: #cb4b4b;
@@ -610,3 +617,11 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     }
 
 }
+
+#honey-comment .honey-comment-text .actions .fr,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr{height:43px;line-height:43px; position:relative; text-align:left;width:310px;}
+#honey-comment .honey-comment-text .actions .fr .btn,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr .btn{position:absolute; right:0; top:5px;} 
+#honey-comment .honey-comment-text .actions .fr img,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr img{position:absolute; right:60px; top:10px; width:140px; height:20px;}
+#honey-comment .honey-comment-text .actions .fr input,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr input{position:absolute; right:205px; top:5px; width:54px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr{height:28px; line-height:28px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr .btn,#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr input{top:-1px;}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button .fr img{top:5px;}
