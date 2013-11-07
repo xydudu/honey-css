@@ -430,6 +430,7 @@ iframe,
   border: 1px solid #dfe1e1;
   margin-top: 5px;
   position: relative;
+  border-radius: 3px 3px 0 0;
 }
 #honey-comment .honey-comment-text .comment-input h5,
 #honey-comment .honey-comment-text .comment-input h4 {
