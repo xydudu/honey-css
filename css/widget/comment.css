@@ -139,7 +139,7 @@ iframe,
   text-align: left;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .actions a {
-  color: #ff8400;
+  color: #ccc;
   margin-right: 10px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .actions a em {
@@ -147,7 +147,7 @@ iframe,
   font-style: normal;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .actions a strong {
-  color: #cc3216;
+  color: #ff8400;
   font-weight: 200;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .arrow {
@@ -437,6 +437,7 @@ iframe,
   border: 1px solid #dfe1e1;
   margin-top: 5px;
   border-radius: 3px 3px 0 0;
+  position: relative;
 }
 #honey-comment .honey-comment-text .comment-input h5,
 #honey-comment .honey-comment-text .comment-input h4 {
