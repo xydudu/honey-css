@@ -222,6 +222,7 @@ iframe,
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply {
   padding: 0;
+  margin: 0;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply table {
   overflow: hidden;
@@ -269,7 +270,7 @@ iframe,
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .reply .reply-button {
   text-align: right;
-  padding: 5px;
+  padding: 5px 0;
   color: #c9c9c9;
   background: #f1f1f1;
   line-height: 30px;
