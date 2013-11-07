@@ -123,7 +123,7 @@ iframe,
   margin-left: 75px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body p {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .top {
   color: #aaa;
@@ -134,7 +134,6 @@ iframe,
 #honey-comment ul.honey-comment-list .honey-comment-body .content {
   color: #545454;
   font-size: 14px;
-  padding-top: 5px!important;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .actions {
   text-align: left;
