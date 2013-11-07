@@ -94,7 +94,7 @@ iframe,
   font-size: 14px;
 }
 #honey-comment ul.honey-comment-list {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 0 10px;
 }
 #honey-comment ul.honey-comment-list li {
@@ -140,7 +140,7 @@ iframe,
   text-align: left;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .actions a {
-  color: #aaa;
+  color: #ff8400;
   margin-right: 10px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .actions a em {
@@ -169,6 +169,10 @@ iframe,
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#honey-comment ul.honey-comment-list .honey-comment-body .reply,
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-content {
+  border-radius: 3px;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-contents {
   border-color: #dcdcdc;
@@ -201,6 +205,17 @@ iframe,
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content p {
   margin: 0;
+}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-content p em {
+  color: #637792;
+  display: block;
+  width: 100%;
+  font-style: normal;
+  padding-bottom: 5px;
+}
+#honey-comment ul.honey-comment-list .honey-comment-body .origin-content p em a {
+  color: #637792;
+  font-weight: normal;
 }
 #honey-comment ul.honey-comment-list .honey-comment-body .origin-content .arrow {
   left: 7px;
@@ -587,6 +602,7 @@ iframe,
   line-height: 28px;
   overflow: hidden;
   border: 0;
+  _margin-top: 2px;
 }
 #honey-comment .selected {
   height: 10px;
