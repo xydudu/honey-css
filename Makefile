@@ -7,6 +7,10 @@ photoview:
 comment:
 	lessc -x $(PWD)/less/widget/comment.less > $(PWD)/css/widget/comment.css
 
+login:
+	lessc -x $(PWD)/less/widget/login.dialog.less > $(PWD)/css/widget/login.dialog.css
+
+
 lessc:
 	lessc -x $(PWD)/less/honey.less > $(PWD)/css/honey.css
 	lessc -x $(PWD)/less/widget/login.dialog.less > $(PWD)/css/widget/login.dialog.css
@@ -16,3 +20,4 @@ lessc:
 	#lessc -x $(PWD)/less/page/active.women.less > $(PWD)/css/page/active.women.css
 	lessc -x $(PWD)/less/widget/comment.less > $(PWD)/css/widget/comment.css
 	
+

@@ -1,0 +1,211 @@
+@import "../config.less";
+@import "../lib/css3.less";
+@import "../mod/mod-dialog.less";
+/**/
+html {
+    color: #444;
+    background: #F1F1F1;
+    -webkit-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;    
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, textarea, p, blockquote, th, td, iframe, .h10, .h20 {
+    margin: 0;
+    padding: 0;
+}
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* 去除默认边框 */
+fieldset, img {
+    border: 0;
+}
+/* 去掉列表前的标识, li 会继承 */
+ol, ul {
+    list-style: none;
+}
+/* 去掉获取焦点的时候高亮 */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    color: #444 !important; 
+}
+/* 去掉iphone访问的一些默认样式 */
+//input[type="text"], textarea {
+//    -webkit-appearance: none;
+//}
+/* 禁止textarea输入框用户缩放 */
+textarea {
+    overflow: auto;
+    resize: none;
+}
+h1, h2, h3, h4, h5, h6, input, textarea, select, button {
+    font-size: 100%;
+}
+/* 去掉图片的默认间隙 */
+img {
+    display: block;
+}
+
+body {
+    font: 12px/1.5 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+a {
+    color: #093D72;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+/* 清理浮动 */
+.clearfix{
+    *zoom: 1;
+    &:after {
+        visibility:hidden;
+        display:block;
+        font-size:0;
+        content:" ";
+        clear:both;
+        height:0;
+    }
+}
+
+/* 以图换字 */
+.hide-text {
+    text-indent: -1000px;
+    overflow: hidden;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right !important;
+}
+.pr {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.pa {
+    position: absolute;
+}
+.hide {
+    display: none;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.ml15 {
+    margin-left: 15px;
+}
+.underline {
+    text-decoration: underline !important;
+}
+.underline:hover {
+    text-decoration: none !important;
+}
+.h10 {
+    height: 10px; 
+}
+
+/**/
+.mod-dialog {
+
+    .h10 {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .honey-login-input {
+        width: 290px;
+        margin-bottom: 15px;
+        .border-radius(2px);
+        .placeholder(#bfbfbf);
+        height: 27px;
+        padding: 3px 6px;
+        font-size: 14px;
+        line-height: 27px;
+        color: gray;
+        border: 1px solid #ddd;
+        .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+        .transition(~"border linear .2s, box-shadow linear .2s");
+
+    }
+    .honey-login-submit {
+        background: url("//@{public-url}sprites/public.png") no-repeat 0 -120px;
+        width: 90px;
+        height: 32px;
+        border: 0;
+        overflow: hidden;
+        color: #fff;
+        font-weight: 200px;
+        line-height: 32px;
+        //padding-bottom: 5px;
+        cursor: pointer;
+    }
+    .actions {
+        text-align: left; 
+        padding: 0 8px;
+        margin: 0;
+        position: relative;
+        color: #999;
+        .set-cookies {
+            padding: 5px 20px;
+            display: inline-block;
+            input {
+                margin-right: 3px;
+            }
+        }
+        .forget-pass {
+            position: absolute;
+            right: 0;
+            top: 9px;
+        }
+        p {
+            clear: both;
+            margin: 0;
+            display: block;
+            border: none;
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            padding-top: 10px;
+            &.noborder {
+                border-top: none;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            span {
+                display: block;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 11px;
+            }
+            a {
+                margin-right: 20px;
+            }
+        }
+        i {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            background: url("//@{public-url}sprites/public.png") no-repeat 0 0;
+            margin-right: 5px;
+            &.sina {
+                background-position: -62px -237px; 
+            }
+            &.qq {
+                background-position: -45px -237px; 
+            }
+            &.tqq {
+                background-position: -46px -254px; 
+            }
+        }
+
+    }
+
+
+}

@@ -1,211 +1,231 @@
-@import "../config.less";
-@import "../lib/css3.less";
-@import "../mod/mod-dialog.less";
+//@import "../config.less";
+//@import "../lib/css3.less";
+//@import "../mod/mod-dialog.less";
+/**
+ *name: mod-play-login.less;
+ *function: 2013金鹰网-login;
+ *creator: Dora;
+ *modify: none;
+ *update-time: 2013-07-31;
+**/
+@charset"utf-8";
+/* 图片文件夹路径 */
+@base-url: "honey.hunantv.com/hunantv.new/image/";
 /**/
-html {
-    color: #444;
-    background: #F1F1F1;
-    -webkit-text-size-adjust: 100%; 
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;    
-}
-/* 内外边距通常让各个浏览器样式的表现位置不同 */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, textarea, p, blockquote, th, td, iframe, .h10, .h20 {
-    margin: 0;
-    padding: 0;
-}
-/* 去掉各Table  cell 的边距并让其边重合 */
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/* 去除默认边框 */
-fieldset, img {
-    border: 0;
-}
-/* 去掉列表前的标识, li 会继承 */
-ol, ul {
-    list-style: none;
-}
-/* 去掉获取焦点的时候高亮 */
-input:focus, textarea:focus, select:focus {
-    outline: none;
-    color: #444 !important; 
-}
-/* 去掉iphone访问的一些默认样式 */
-//input[type="text"], textarea {
-//    -webkit-appearance: none;
-//}
-/* 禁止textarea输入框用户缩放 */
-textarea {
-    overflow: auto;
-    resize: none;
-}
-h1, h2, h3, h4, h5, h6, input, textarea, select, button {
-    font-size: 100%;
-}
-/* 去掉图片的默认间隙 */
-img {
-    display: block;
+.mod-play-login{
+	width:630px;
+	height:367px;
+	position:relative;
+	background:url("//@{base-url}login/login-bg1.png")  0 0 repeat-y;
+	margin:0 auto;
+	border:1px solid #d8d8d8;
+	box-shadow:4px 4px 0 rgba(0,0,0,.3);	
+	.play-login-close{
+		display:block;
+		width:43px;
+		height:38px;
+		background:url("//@{base-url}login/close.png")  0 0 no-repeat;
+		box-shadow:4px 4px 0 rgba(0,0,0,.3);	
+		position:absolute;
+		right:-43px;
+		top:-1px;
+	}	
+	.con-box{
+		width:590px;
+		padding-left:40px;
+		.cb-l{
+			float:left;
+			width:395px;
+			overflow:hidden;			
+			p{
+				display:block;
+				width:395px;
+				padding:0 0 25px;
+				height:39px;
+				.txt-int,.txt-int1{
+					width:283px;
+					height:37px;
+					line-height:37px;
+					background:url("//@{base-url}login/ico-8.png")  0 0 no-repeat #f3f3f3;
+					border:1px solid #d8d8d8;
+					color:#b3b3b3;
+					text-indent: 48px;
+					float:left;
+					display:inline;
+				}
+				.txt-int1{
+					background:url("//@{base-url}login/ico-9.png")  0 0 no-repeat #f3f3f3;
+				}
+				&.login-til{
+					padding:0;
+					height:75px;
+					line-height:75px;
+					font-size:14px;
+					color:#4c4c4c;
+					font-family:"宋体";
+					em{
+						color:#ff8400;
+						font-family:'Arial';
+					}
+				}
+				&.btn{
+					height:30px;
+					overflow:hidden;
+					.btn-login{
+						display:block;
+						float:left;
+						width:82px;
+						height:30px;
+						line-height:30px;
+						color:#fff;
+						text-align:center;
+						margin-right:15px;
+						background:#ff8400;
+						position:relative;
+						.loading{
+							background: url("//@{base-url}global/loading.gif") no-repeat scroll center center transparent;
+						    display: none;
+						    height: 20px;
+						    left: 50%;
+						    margin-left: -10px;
+						    position: absolute;
+						    top: 12px;
+						    width: 20px;
+						    z-index: 10;
+						}
+						&.bl-loading{
+							background:#e5e5e5;
+							.loading{
+								top:6px;
+								display:block;
+							}
+						}
+					}
+					label{
+						float:left;
+						width:100px;
+						position:relative;
+						height:30px;
+						line-height:30px;
+						color:#8d8a86;
+						text-indent:20px;
+						input{
+							position:absolute;
+							left:-3px;
+							top:5px;
+						}
+					}
+					.forget{
+						display:block;
+						width:60px;
+						padding-left:5px;
+						height:30px;
+						line-height:30px;
+						color:#ff8400;
+						float:left;
+						overflow:hidden;
+						&:hover{
+							text-decoration:underline;
+						}
+					}
+				}
+			}
+		}
+		.cb-r{
+			float:left;
+			width:121px;
+			padding-left:39px;
+			.zc-btn{
+				display:block;
+				width:121px;
+				background:url("//@{base-url}login/ico-7.png") 103px center no-repeat #FF8400;
+				height:34px;
+				line-height:34px;
+				color:#fff;
+				text-align:center;
+				margin-bottom:10px;
+			}
+			.wb-til{
+				display:block;
+				width:119px;
+				padding-bottom:15px;
+				color:#8d8a86;
+				text-indent:9px;
+				padding-top:55px;
+				text-align:center;
+			}
+			.weibo{
+				display:block;
+				width:110px;
+				margin-left:10px;
+				overflow:hidden;
+				background:url("//@{base-url}login/share-2.png")  9px 0 no-repeat;
+				a{
+					display:block;
+					width:25px;
+					height:25px;
+					overflow:hidden;
+					text-indent:-999px;
+					margin-left:9px;
+					float:left;
+					&.sina:hover{
+						background:url("//@{base-url}login/share-2-hover.png")  0 0 no-repeat;
+					}
+					&.tx:hover{
+						background:url("//@{base-url}login/share-2-hover.png")  -34px 0 no-repeat;
+					}
+					&.qq:hover{
+						background:url("//@{base-url}login/share-2-hover.png")  -68px 0 no-repeat;
+					}
+				}
+			}
+		}
+	}
 }
 
-body {
-    font: 12px/1.5 'Helvetica Neue', Helvetica, Arial, Sans-serif;
-}
-a {
-    color: #093D72;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-/* 清理浮动 */
-.clearfix{
-    *zoom: 1;
-    &:after {
-        visibility:hidden;
-        display:block;
-        font-size:0;
-        content:" ";
-        clear:both;
-        height:0;
-    }
-}
-
-/* 以图换字 */
-.hide-text {
-    text-indent: -1000px;
-    overflow: hidden;
-}
-.fl {
-    float: left;
-}
-.fr {
-    float: right !important;
-}
-.pr {
-    position: relative;
-    left: 0;
-    top: 0;
-}
-.pa {
-    position: absolute;
-}
-.hide {
-    display: none;
-}
-.mt10 {
-    margin-top: 10px;
-}
-.ml15 {
-    margin-left: 15px;
-}
-.underline {
-    text-decoration: underline !important;
-}
-.underline:hover {
-    text-decoration: none !important;
-}
-.h10 {
-    height: 10px; 
-}
-
-/**/
-.mod-dialog {
-
-    .h10 {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    .honey-login-input {
-        width: 290px;
-        margin-bottom: 15px;
-        .border-radius(2px);
-        .placeholder(#bfbfbf);
-        height: 27px;
-        padding: 3px 6px;
-        font-size: 14px;
-        line-height: 27px;
-        color: gray;
-        border: 1px solid #ddd;
-        .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-        .transition(~"border linear .2s, box-shadow linear .2s");
-
-    }
-    .honey-login-submit {
-        background: url("//@{public-url}sprites/public.png") no-repeat 0 -120px;
-        width: 90px;
-        height: 32px;
-        border: 0;
-        overflow: hidden;
-        color: #fff;
-        font-weight: 200px;
-        line-height: 32px;
-        //padding-bottom: 5px;
-        cursor: pointer;
-    }
-    .actions {
-        text-align: left; 
-        padding: 0 8px;
-        margin: 0;
-        position: relative;
-        color: #999;
-        .set-cookies {
-            padding: 5px 20px;
-            display: inline-block;
-            input {
-                margin-right: 3px;
-            }
-        }
-        .forget-pass {
-            position: absolute;
-            right: 0;
-            top: 9px;
-        }
-        p {
-            clear: both;
-            margin: 0;
-            display: block;
-            border: none;
-            border: 0;
-            border-top: 1px solid #ddd;
-            margin-top: 20px;
-            padding-top: 10px;
-            &.noborder {
-                border-top: none;
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-            span {
-                display: block;
-                padding: 0;
-                margin: 0;
-                margin-bottom: 11px;
-            }
-            a {
-                margin-right: 20px;
-            }
-        }
-        i {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            overflow: hidden;
-            background: url("//@{public-url}sprites/public.png") no-repeat 0 0;
-            margin-right: 5px;
-            &.sina {
-                background-position: -62px -237px; 
-            }
-            &.qq {
-                background-position: -45px -237px; 
-            }
-            &.tqq {
-                background-position: -46px -254px; 
-            }
-        }
-
-    }
-
-
+.play-login-ts{
+	width:438px;
+	height:198px;
+	background:#fff;
+	.play-login-ts-main{
+		padding:0;
+		p{
+			display:block;
+			&.login-til{
+				height:20px;
+				line-height:20px;
+				font-size:14px;
+				padding:20px 20px 0;
+				color:#4c4c4c;
+				font-family:"宋体";	
+				em{
+					color: #FF8400;
+    				font-family: 'Arial';
+				}			
+			}
+			&.login-ts{
+				height:114px;
+				line-height:114px;
+				text-align:center;
+			}
+			&.login-btn{
+				height:45px;
+				a{
+					display:block;
+					width:50%;
+					float:left;
+					height:45px; 
+					line-height:45px;
+					text-align:center;
+					font-size:18px;
+					color:#fff;
+					background:#ff8400;
+					&.btn-1{
+						color:#b5b5b5;
+						background:#e9e9e9;
+					}
+				}
+			}
+		}
+	}
 }
