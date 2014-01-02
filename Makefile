@@ -9,6 +9,8 @@ comment:
 
 login:
 	lessc -x $(PWD)/less/widget/login.dialog.less > $(PWD)/css/widget/login.dialog.css
+	cp $(PWD)/css/widget/login.dialog.css $(PWD)/svn/css/widget/login.dialog.css 
+
 
 
 lessc:
