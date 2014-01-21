@@ -5,19 +5,22 @@
      color: black;
      background-color: white;
      border-radius: 3px 3px 0px 0px;
+     line-height: 29px;
  }
  .hdd-title-select {
      color: white;
-     background-color: #E06C45;
+     background-color: #e26c45;
  }
  .hdd-text {
      width: 75%;
      float: left;
      text-align: center;
+     font-size: 14px;
  }
  .hdd-tip {
      position: relative;
      right: 10%;
+     display: block;
  }
  .hdd-pouter, .hdd-pinner {
      position: absolute;
@@ -39,19 +42,18 @@
      display: block;
      width: 100%;
      height: 100%;
-     color: #909090;
+     color: #767676;
      text-align: center;
      margin-left: -5%;
  }
  .hdd-list a:hover {
-     background-color: #E06C45;
-     color: white;
+     background-color: white;
      text-decoration: none;
  }
  .hdd-body {
      position: absolute;
      overflow: hidden;
-     width: 51px;
+     width: 52px;
      height: 200px;
      background-color: #EEEEEE;
      display: none;
@@ -71,15 +73,17 @@
  .hdd_track {
      width: 8px;
      height: 100%;
-     background-color: #c8c8c8;
+     background-color: #c7c5c5;
  }
  .hdd_dragButton {
      position: absolute;
      top:0px;
+     right: 0px;
      width: 8px;
      _width: 9px;
-     background-color: #E06C45;
+     background-color: #e26c45;
      cursor: pointer;
+     z-index: 10;
  }
  .disable-select {
      -webkit-user-select: none;
