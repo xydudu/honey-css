@@ -1,0 +1,93 @@
+ .hdd-title {
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+     color: black;
+     background-color: white;
+     border-radius: 3px 3px 0px 0px;
+     line-height: 29px;
+ }
+ .hdd-title-select {
+     color: white;
+     background-color: #e26c45;
+ }
+ .hdd-text {
+     width: 75%;
+     float: left;
+     text-align: center;
+     font-size: 14px;
+ }
+ .hdd-tip {
+     position: relative;
+     right: 10%;
+     display: block;
+ }
+ .hdd-pouter, .hdd-pinner {
+     position: absolute;
+     color: white;
+     top: -3px;
+     font-size: 12px;
+     font-style: normal;
+ }
+ .hdd-pinner {
+     color: black;
+     top: -2px;
+ }
+ .hdd-list {
+     width: 100%;
+     line-height: 20px;
+ }
+ .hdd-list a {
+     text-decoration: none;
+     display: block;
+     width: 100%;
+     height: 100%;
+     color: #767676;
+     text-align: center;
+     margin-left: -5%;
+ }
+ .hdd-list a:hover {
+     background-color: white;
+     text-decoration: none;
+ }
+ .hdd-body {
+     position: absolute;
+     overflow: hidden;
+     width: 52px;
+     height: 200px;
+     background-color: #EEEEEE;
+     display: none;
+     z-index: 9999;
+     border: 1px solid #B2B2B2;
+     border-top: none;
+     border-right:none;
+     border-radius: 0px 0px 3px 3px;
+ }
+ .hdd_verticalBar {
+     position: absolute;
+     right: 0px;
+     _right: -1px;
+     top: 0px;
+     height: 100%;
+ }
+ .hdd_track {
+     width: 8px;
+     height: 100%;
+     background-color: #c7c5c5;
+ }
+ .hdd_dragButton {
+     position: absolute;
+     top:0px;
+     right: 0px;
+     width: 8px;
+     _width: 9px;
+     background-color: #e26c45;
+     cursor: pointer;
+     z-index: 10;
+ }
+ .disable-select {
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+ }
